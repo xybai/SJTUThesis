@@ -1,3 +1,8 @@
+# 我fork之后的说明
+
+原repository的模板中因版权问题没有包含所需要的字体，但是我从sharelatex上找到了相应的字体，于是将字体下载打包后加入该模板，亲测本地编译后可用，具体使用方法见下。
+
+
 # 上海交通大学学位论文模板
 
 这是为撰写上海交通大学学士、硕士或博士论文而准备的 XeLaTeX 模板，非官方出品。生成的学位论文文件参见 [README.pdf][README]，详细使用说明参见 [SJTUThesis Wiki](https://github.com/weijianwen/SJTUThesis/wiki)，欢迎大家分享使用经验。
