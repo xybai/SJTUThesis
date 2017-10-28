@@ -1,0 +1,710 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{gantz2012digital}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d6478eb58bafd90bf6761389b77673d6}{Gantz}{G\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b94eb85ed75464bc816150c397d45381}{Reinsel}{R\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fa8adf9eb94b29479098731888733a52}
+      \strng{fullhash}{fa8adf9eb94b29479098731888733a52}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IDC iView: IDC Analyze the future}
+      \field{title}{The digital universe in 2020: Big data, bigger digital shadows, and biggest growth in the far east}
+      \field{usera}{J}
+      \field{usere}{Gantz, John and Reinsel, David}
+      \field{userf}{Gantz, John and Reinsel, David}
+      \field{volume}{2007}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \keyw{gantz2012digital}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'gantz2012digital'}
+    \endentry
+    \entry{villars2011big}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a32ab72e968bdd617e4eada28c813a90}{Villars}{V\bibinitperiod}{Richard\bibnamedelima L}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=92d83644a4ec6e1a1b1f33c6ce11f0ce}{Olofson}{O\bibinitperiod}{Carl\bibnamedelima W}{C\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=c59a1f214d25e091c71c646e77072e01}{Eastwood}{E\bibinitperiod}{Matthew}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8e381d03856980c6c6149df39580af5d}
+      \strng{fullhash}{8e381d03856980c6c6149df39580af5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{White Paper, IDC}
+      \field{title}{Big data: What it is and why you should care}
+      \field{usera}{J}
+      \field{usere}{Villars, Richard L and Olofson, Carl W and Eastwood, Matthew}
+      \field{userf}{Villars, Richard L and Olofson, Carl W and Eastwood, Matthew}
+      \field{year}{2011}
+      \keyw{villars2011big}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'villars2011big'}
+    \endentry
+    \entry{idc}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.idc.com/getdoc.jsp?containerId=IDC_P33195}}
+      \field{title}{Worldwide Semiannual Big Data and Analytics Spending Guide}
+      \keyw{idc}
+    \endentry
+    \entry{maitland2002european}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7dd6a2770ec9098f388d6828a4bb3634}{Maitland}{M\bibinitperiod}{Carleen\bibnamedelima F}{C\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=59a7fc3a996e3e2f5644d8d522f88046}{Bauer}{B\bibinitperiod}{Johannes\bibnamedelima M}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=6366cce31df99d9c3b095ca1e1b32faf}{Westerveld}{W\bibinitperiod}{Rudi}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7a158fba55dbe890843ce41f267b0697}
+      \strng{fullhash}{7a158fba55dbe890843ce41f267b0697}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Telecommunications Policy}
+      \field{number}{9}
+      \field{title}{The European market for mobile data: evolving value chains and industry structures}
+      \field{usera}{J}
+      \field{usere}{Maitland, Carleen F and Bauer, Johannes M and Westerveld, Rudi}
+      \field{userf}{Maitland, Carleen F and Bauer, Johannes M and Westerveld, Rudi}
+      \field{volume}{26}
+      \field{year}{2002}
+      \field{pages}{485\bibrangedash 504}
+      \range{pages}{20}
+      \keyw{maitland2002european}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'maitland2002european'}
+    \endentry
+    \entry{turner2014digital}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3e1ef02802916013e4b9fa8d42d1a8e6}{Turner}{T\bibinitperiod}{Vernon}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=425a92aa35cc0a0ce6860646c6ce85fb}{Gantz}{G\bibinitperiod}{John\bibnamedelima F}{J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=b94eb85ed75464bc816150c397d45381}{Reinsel}{R\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=66aff01d56da0e1be25c1cbfadc944c9}{Minton}{M\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a4bda4d63bdafd02e59d8921583044e6}
+      \strng{fullhash}{c9db3b69322dd1da5213a86549ee7eb7}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IDC Analyze the Future}
+      \field{title}{The digital universe of opportunities: rich data and the increasing value of the internet of things}
+      \field{usera}{J}
+      \field{usere}{Turner, Vernon and Gantz, John F and Reinsel, David and Minton, Stephen}
+      \field{userf}{Turner, Vernon and Gantz, John F and Reinsel, David and Minton, Stephen}
+      \field{year}{2014}
+      \keyw{turner2014digital}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'turner2014digital'}
+    \endentry
+    \entry{MicrosoftAzure}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://datamarket.azure.com/browse/data}}
+      \field{title}{Microsoft Windows Azure Marketplace}
+      \keyw{MicrosoftAzure}
+    \endentry
+    \entry{infochimps}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.infochimps.com/}}
+      \field{title}{Infochimps Datamarket}
+      \keyw{infochimps}
+    \endentry
+    \entry{factual}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.factual.com/}}
+      \field{title}{Factual}
+      \keyw{factual}
+    \endentry
+    \entry{gbdex}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.gbdex.com/website/}}
+      \field{title}{贵阳大数据交易所}
+      \keyw{gbdex}
+    \endentry
+    \entry{chinadatatrading}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.chinadatatrading.com}}
+      \field{title}{东湖大数据交易中心}
+      \keyw{chinadatatrading}
+    \endentry
+    \entry{customlists}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.customlists.net/}}
+      \field{title}{Custom Lists}
+      \keyw{customlists}
+    \endentry
+    \entry{koutris2015query}{article}{}
+      \name{author}{5}{}{%
+        {{hash=eed26062138406c0914e729cebd1d201}{Koutris}{K\bibinitperiod}{Paraschos}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=0e60aa7cdb15df1fdc1af82880aa387f}{Upadhyaya}{U\bibinitperiod}{Prasang}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=ea491ce017356bb561d7f05c80d7262b}{Balazinska}{B\bibinitperiod}{Magdalena}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8d65b946c2af0b92bf018fabd57296b7}{Howe}{H\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=dad05536948804793c3e454acd5ecb8f}{Suciu}{S\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{6c81380186f39bdb59c8307cd251d0f6}
+      \strng{fullhash}{b0762dad1edef1764f7d0fa4f3b283b2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the ACM (JACM)}
+      \field{number}{5}
+      \field{title}{Query-based data pricing}
+      \field{usera}{J}
+      \field{usere}{Koutris, Paraschos and Upadhyaya, Prasang and Balazinska, Magdalena and Howe, Bill and Suciu, Dan}
+      \field{userf}{Koutris, Paraschos and Upadhyaya, Prasang and Balazinska, Magdalena and Howe, Bill and Suciu, Dan}
+      \field{volume}{62}
+      \field{year}{2015}
+      \field{pages}{43}
+      \range{pages}{1}
+      \keyw{koutris2015query}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'koutris2015query'}
+    \endentry
+    \entry{bakos2001aggregation}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=77c6fff6b9bf0770af2ad9d6ef5b5831}{Bakos}{B\bibinitperiod}{Yannis}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=7bd9f54569cb8c0301da00ed49b5a752}{Brynjolfsson}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{cd417ebbb7e9af8c5965289212713c0b}
+      \strng{fullhash}{cd417ebbb7e9af8c5965289212713c0b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Lectures in E-Commerce}
+      \field{title}{Aggregation and disaggregation of information goods: Implications for bundling, site licensing, and micropayment systems}
+      \field{usera}{G}
+      \field{usere}{Bakos, Yannis and Brynjolfsson, Erik}
+      \field{userf}{Bakos, Yannis and Brynjolfsson, Erik}
+      \field{year}{2001}
+      \field{pages}{103\bibrangedash 122}
+      \range{pages}{20}
+      \keyw{bakos2001aggregation}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'bakos2001aggregation'}
+    \endentry
+    \entry{bakos1999bundling}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77c6fff6b9bf0770af2ad9d6ef5b5831}{Bakos}{B\bibinitperiod}{Yannis}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=7bd9f54569cb8c0301da00ed49b5a752}{Brynjolfsson}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{cd417ebbb7e9af8c5965289212713c0b}
+      \strng{fullhash}{cd417ebbb7e9af8c5965289212713c0b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management science}
+      \field{number}{12}
+      \field{title}{Bundling information goods: Pricing, profits, and efficiency}
+      \field{usera}{J}
+      \field{usere}{Bakos, Yannis and Brynjolfsson, Erik}
+      \field{userf}{Bakos, Yannis and Brynjolfsson, Erik}
+      \field{volume}{45}
+      \field{year}{1999}
+      \field{pages}{1613\bibrangedash 1630}
+      \range{pages}{18}
+      \keyw{bakos1999bundling}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'bakos1999bundling'}
+    \endentry
+    \entry{Vickrey1961Counterspeculation}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ae3c60d8c94ccf50c57a46630c2c42e1}{Vickrey}{V\bibinitperiod}{William}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \strng{fullhash}{ae3c60d8c94ccf50c57a46630c2c42e1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{1}
+      \field{title}{Counterspeculation, Auctions, and Competitive Sealed Tenders}
+      \field{usera}{J}
+      \field{usere}{Vickrey, William}
+      \field{userf}{Vickrey, William}
+      \field{volume}{16}
+      \field{year}{1961}
+      \field{pages}{8\bibrangedash 37}
+      \range{pages}{30}
+      \keyw{Vickrey1961Counterspeculation}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Vickrey1961Counterspeculation'}
+    \endentry
+    \entry{Milgrom1989Auctions}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4a72201f09391b2eccac2ca94d4a921b}{Milgrom}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4a72201f09391b2eccac2ca94d4a921b}
+      \strng{fullhash}{4a72201f09391b2eccac2ca94d4a921b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{number}{3}
+      \field{title}{Auctions and Bidding: A Primer}
+      \field{usera}{J}
+      \field{usere}{Milgrom, Paul}
+      \field{userf}{Milgrom, Paul}
+      \field{volume}{3}
+      \field{year}{1989}
+      \field{pages}{3\bibrangedash 22}
+      \range{pages}{20}
+      \keyw{Milgrom1989Auctions}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Milgrom1989Auctions'}
+    \endentry
+    \entry{Milgrom1982A}{article}{}
+      \name{author}{2}{}{%
+        {{hash=23a43985f541fa92eb19e73ee9ccab77}{Milgrom}{M\bibinitperiod}{Paul\bibnamedelima R.}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=59fe33890bf03d203cc8a05ee4bcf5e4}{Weber}{W\bibinitperiod}{Robert\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{de93444610113f1cfaa31d9bc13c4562}
+      \strng{fullhash}{de93444610113f1cfaa31d9bc13c4562}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{5}
+      \field{title}{A Theory of Auctions and Competitive Bidding}
+      \field{usera}{J}
+      \field{usere}{Milgrom, Paul R. and Weber, Robert J.}
+      \field{userf}{Milgrom, Paul R. and Weber, Robert J.}
+      \field{volume}{50}
+      \field{year}{1982}
+      \field{pages}{1089\bibrangedash 1122}
+      \range{pages}{34}
+      \keyw{Milgrom1982A}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Milgrom1982A'}
+    \endentry
+    \entry{Riley1981Optimal}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dd84b7f694b47f9e8024a64fc752f457}{JG\bibnamedelima Riley}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{WF\bibnamedelima Samuelson}{W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dd84b7f694b47f9e8024a64fc752f457}
+      \strng{fullhash}{dd84b7f694b47f9e8024a64fc752f457}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{3}
+      \field{title}{Optimal Auctions}
+      \field{usera}{J}
+      \field{usere}{JG Riley, WF Samuelson}
+      \field{userf}{JG Riley, WF Samuelson}
+      \field{volume}{71}
+      \field{year}{1981}
+      \field{pages}{381\bibrangedash 392}
+      \range{pages}{12}
+      \keyw{Riley1981Optimal}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Riley1981Optimal'}
+    \endentry
+    \entry{Lucking2000Auctions}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cdbb1a7292dd7c2ca660d70208c2c63d}{Lucking-Reiley}{L\bibinithyphendelim R\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cdbb1a7292dd7c2ca660d70208c2c63d}
+      \strng{fullhash}{cdbb1a7292dd7c2ca660d70208c2c63d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Industrial Economics}
+      \field{number}{3}
+      \field{title}{Auctions on the Internet: What’s Being Auctioned, and How?}
+      \field{usera}{J}
+      \field{usere}{Lucking-Reiley, David}
+      \field{userf}{Lucking-Reiley, David}
+      \field{volume}{48}
+      \field{year}{2000}
+      \field{pages}{227\bibrangedash 252}
+      \range{pages}{26}
+      \keyw{Lucking2000Auctions}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Lucking2000Auctions'}
+    \endentry
+    \entry{Beam1998Auctions}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f634456914e1010226776c59a2a5642d}{Beam}{B\bibinitperiod}{Carrie}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=9690e9f797f1d48e01336173ecdebbb2}{Segev}{S\bibinitperiod}{Arie}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3217a1d9e379a914d86be47af01e9ca3}
+      \strng{fullhash}{3217a1d9e379a914d86be47af01e9ca3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Auctions on the Internet: A Field Study}
+      \field{usera}{J}
+      \field{usere}{Beam, Carrie and Segev, Arie}
+      \field{userf}{Beam, Carrie and Segev, Arie}
+      \field{year}{1998}
+      \field{pages}{1032}
+      \range{pages}{1}
+      \keyw{Beam1998Auctions}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Beam1998Auctions'}
+    \endentry
+    \entry{Pinker2003Managing}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b7ed574a40703f797145802ca65d05b3}{Pinker}{P\bibinitperiod}{Edieal\bibnamedelima J.}{E\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=9e3d959f1fc7ad2aa8ef6b02a2cbafb6}{Seidmann}{S\bibinitperiod}{Abraham}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e8db7d5def3c621c6e8f643846d6a396}
+      \strng{fullhash}{e8db7d5def3c621c6e8f643846d6a396}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{number}{11}
+      \field{title}{Managing Online Auctions: Current Business and Research Issues}
+      \field{usera}{J}
+      \field{usere}{Pinker, Edieal J. and Seidmann, Abraham}
+      \field{userf}{Pinker, Edieal J. and Seidmann, Abraham}
+      \field{volume}{49}
+      \field{year}{2003}
+      \field{pages}{1457\bibrangedash 1484}
+      \range{pages}{28}
+      \keyw{Pinker2003Managing}
+    \endentry
+    \entry{Pinker2001Using}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b7ed574a40703f797145802ca65d05b3}{Pinker}{P\bibinitperiod}{Edieal\bibnamedelima J.}{E\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=9e3d959f1fc7ad2aa8ef6b02a2cbafb6}{Seidmann}{S\bibinitperiod}{Abraham}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=58f7058a75f81e9bd7a01e6c6cd78886}{Vakrat}{V\bibinitperiod}{Yaniv}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f34496ee8387ca57defc2d0ed90b1590}
+      \strng{fullhash}{f34496ee8387ca57defc2d0ed90b1590}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Using Transaction Data for the Design of Sequential, Multi-unit, Online Auctions}
+      \field{usera}{J}
+      \field{usere}{Pinker, Edieal J. and Seidmann, Abraham and Vakrat, Yaniv}
+      \field{userf}{Pinker, Edieal J. and Seidmann, Abraham and Vakrat, Yaniv}
+      \field{year}{2001}
+      \keyw{Pinker2001Using}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Pinker2001Using'}
+    \endentry
+    \entry{Roth2002Last}{article}{}
+      \name{author}{2}{}{%
+        {{hash=498f3107e342a0bde781e8d8254a1862}{Roth}{R\bibinitperiod}{Alvin\bibnamedelima E.}{A\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=f16397f1f47706dc6112aa878498b31c}{Ockenfels}{O\bibinitperiod}{Axel}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c34b72cc4e7ba3573526bb4218450cac}
+      \strng{fullhash}{c34b72cc4e7ba3573526bb4218450cac}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{4}
+      \field{title}{Last-Minute Bidding and the Rules for Ending Second-Price Auctions: Evidence from eBay and Amazon Auctions on the Internet}
+      \field{usera}{J}
+      \field{usere}{Roth, Alvin E. and Ockenfels, Axel}
+      \field{userf}{Roth, Alvin E. and Ockenfels, Axel}
+      \field{volume}{92}
+      \field{year}{2002}
+      \field{pages}{1093\bibrangedash 1103}
+      \range{pages}{11}
+      \keyw{Roth2002Last}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Roth2002Last'}
+    \endentry
+    \entry{Ockenfels2006Online}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f16397f1f47706dc6112aa878498b31c}{Ockenfels}{O\bibinitperiod}{Axel}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d911720908a077e50f5515df48ceda13}{Reiley}{R\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=f42c7fefe26a82016d4c1f6a41783547}{Sadrieh}{S\bibinitperiod}{Abdolkarim}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fd0c1611fc83658590d3986fe4fd468a}
+      \strng{fullhash}{fd0c1611fc83658590d3986fe4fd468a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nber Working Papers}
+      \field{number}{3}
+      \field{title}{Online Auctions}
+      \field{usera}{J}
+      \field{usere}{Ockenfels, Axel and Reiley, David and Sadrieh, Abdolkarim}
+      \field{userf}{Ockenfels, Axel and Reiley, David and Sadrieh, Abdolkarim}
+      \field{volume}{volume 310}
+      \field{year}{2006}
+      \field{pages}{233\bibrangedash 241}
+      \range{pages}{9}
+      \keyw{Ockenfels2006Online}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Ockenfels2006Online'}
+    \endentry
+    \entry{Dan2003Buying}{article}{}
+      \name{author}{2}{}{%
+        {{hash=692cda90d4535c8e8840e8f1677f3c72}{Dan}{D\bibinitperiod}{Ariely}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d22804f2d3012d7cf1f8ebe6d652485a}{Simonson}{S\bibinitperiod}{Itamar}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a311f62b24b2087ca20712399b3f96df}
+      \strng{fullhash}{a311f62b24b2087ca20712399b3f96df}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Consumer Psychology}
+      \field{number}{1–2}
+      \field{title}{Buying, Bidding, Playing, or Competing? Value Assessment and Decision Dynamics in Online Auctions}
+      \field{usera}{J}
+      \field{usere}{Dan, Ariely and Simonson, Itamar}
+      \field{userf}{Dan, Ariely and Simonson, Itamar}
+      \field{volume}{13}
+      \field{year}{2003}
+      \field{pages}{113\bibrangedash 123}
+      \range{pages}{11}
+      \keyw{Dan2003Buying}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Dan2003Buying'}
+    \endentry
+    \entry{Lu1996The}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ba3367591c46f1be67f03b7dff676aaf}{Lu}{L\bibinitperiod}{Xiaohua}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=a94a3ed9378ec5af6b452b3d174ac387}{Mcafee}{M\bibinitperiod}{R.\bibnamedelimi Preston}{R\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9cb8590908d262d1a5e8a2b181928e8a}
+      \strng{fullhash}{9cb8590908d262d1a5e8a2b181928e8a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Games and Economic Behavior}
+      \field{number}{2}
+      \field{title}{The Evolutionary Stability of Auctions over Bargaining ☆}
+      \field{usera}{J}
+      \field{usere}{Lu, Xiaohua and Mcafee, R. Preston}
+      \field{userf}{Lu, Xiaohua and Mcafee, R. Preston}
+      \field{volume}{15}
+      \field{year}{1996}
+      \field{pages}{228\bibrangedash 254}
+      \range{pages}{27}
+      \keyw{Lu1996The}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Lu1996The'}
+    \endentry
+    \entry{Harris1981A}{article}{}
+      \name{author}{2}{}{%
+        {{hash=93b1fec7d9df0610f4637578d0345eb9}{Harris}{H\bibinitperiod}{Milton}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=84fc366aff75d532e4c56c3b1d9b830b}{Raviv}{R\bibinitperiod}{Artur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c951bc4e5cc44a71fb48eed129a42e47}
+      \strng{fullhash}{c951bc4e5cc44a71fb48eed129a42e47}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{3}
+      \field{title}{A Theory of Monopoly Pricing Schemes with Demand Uncertainty}
+      \field{usera}{J}
+      \field{usere}{Harris, Milton and Raviv, Artur}
+      \field{userf}{Harris, Milton and Raviv, Artur}
+      \field{volume}{71}
+      \field{year}{1981}
+      \field{pages}{347\bibrangedash 365}
+      \range{pages}{19}
+      \keyw{Harris1981A}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Harris1981A'}
+    \endentry
+    \entry{li2017first}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=52379ed0ce8536bcd91139c884d4b26a}{Li}{L\bibinitperiod}{Xijun}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=f965c6a5f7a77d088f23a9c40133d85f}{Yao}{Y\bibinitperiod}{Jianguo}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0c308e80c2f3d35fdabad2956a9c14e9}{Liu}{L\bibinitperiod}{Xue}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=193fe22ab9a3b44f8ae467e9c216bcec}{Guan}{G\bibinitperiod}{Haibing}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{570a58f034a679e3cd722afa5f7ea340}
+      \strng{fullhash}{3e34ae85c631176e7f117487b516faf6}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Distributed Computing Systems (ICDCS), 2017 IEEE 37th International Conference on}
+      \field{title}{A First Look at Information Entropy-Based Data Pricing}
+      \field{usera}{C}
+      \field{usere}{Li, Xijun and Yao, Jianguo and Liu, Xue and Guan, Haibing}
+      \field{userf}{Li, Xijun and Yao, Jianguo and Liu, Xue and Guan, Haibing}
+      \field{year}{2017}
+      \field{pages}{2053\bibrangedash 2060}
+      \range{pages}{8}
+      \keyw{li2017first}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'li2017first'}
+    \endentry
+    \entry{Myerson1981Optimal}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed46e294842b3c9da7ff247ced2f0bde}{Myerson}{M\bibinitperiod}{Roger\bibnamedelima B.}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ed46e294842b3c9da7ff247ced2f0bde}
+      \strng{fullhash}{ed46e294842b3c9da7ff247ced2f0bde}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics of Operations Research}
+      \field{number}{1}
+      \field{title}{Optimal Auction Design}
+      \field{usera}{J}
+      \field{usere}{Myerson, Roger B.}
+      \field{userf}{Myerson, Roger B.}
+      \field{volume}{6}
+      \field{year}{1981}
+      \field{pages}{58\bibrangedash 73}
+      \range{pages}{16}
+      \keyw{Myerson1981Optimal}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Myerson1981Optimal'}
+    \endentry
+    \entry{Lucking1999Using}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cdbb1a7292dd7c2ca660d70208c2c63d}{Lucking-Reiley}{L\bibinithyphendelim R\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cdbb1a7292dd7c2ca660d70208c2c63d}
+      \strng{fullhash}{cdbb1a7292dd7c2ca660d70208c2c63d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{5}
+      \field{title}{Using Field Experiments to Test Equivalence between Auction Formats: Magic on the Internet}
+      \field{usera}{J}
+      \field{usere}{Lucking-Reiley, David}
+      \field{userf}{Lucking-Reiley, David}
+      \field{volume}{89}
+      \field{year}{1999}
+      \field{pages}{}
+      \range{pages}{-1}
+      \keyw{Lucking1999Using}
+      \warn{\item Range field 'pages' in entry 'Lucking1999Using' is malformed, skipping}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Lucking1999Using'}
+    \endentry
+    \entry{amazonauction}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon Auction Official Website}
+      \verb{url}
+      \verb http://auctions.amazon.com
+      \endverb
+      \keyw{amazonauction}
+    \endentry
+    \entry{Bradlow2007Bayesian}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f367d15c2f8e71bf5ba55734ec9964a7}{Bradlow}{B\bibinitperiod}{Eric\bibnamedelima T}{E\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=a54d82853a0a1dc5de20a627d11b1af4}{Park}{P\bibinitperiod}{Young\bibnamedelima Hoon}{Y\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{7ce23d4be5035bbaf58f7581bbb220df}
+      \strng{fullhash}{7ce23d4be5035bbaf58f7581bbb220df}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bayesian Estimation of Bid Sequences in Internet Auctions Using a Generalized Record-Breaking Model}
+      \field{usera}{M}
+      \field{usere}{Bradlow, Eric T and Park, Young Hoon}
+      \field{userf}{Bradlow, Eric T and Park, Young Hoon}
+      \field{year}{2007}
+      \field{pages}{218\bibrangedash 229}
+      \range{pages}{12}
+      \keyw{Bradlow2007Bayesian}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Bradlow2007Bayesian'}
+    \endentry
+    \entry{Vakrat2000Implications}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=58f7058a75f81e9bd7a01e6c6cd78886}{Vakrat}{V\bibinitperiod}{Yaniv}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=9e3d959f1fc7ad2aa8ef6b02a2cbafb6}{Seidmann}{S\bibinitperiod}{Abraham}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{63e8dd3c2a660a96e83f30fa61dd1af9}
+      \strng{fullhash}{63e8dd3c2a660a96e83f30fa61dd1af9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Hawaii International Conference on System Sciences}
+      \field{title}{Implications of the Bidders' Arrival Process on the Design of Online Auctions}
+      \field{usera}{C}
+      \field{usere}{Vakrat, Yaniv and Seidmann, Abraham}
+      \field{userf}{Vakrat, Yaniv and Seidmann, Abraham}
+      \field{year}{2000}
+      \field{pages}{6015}
+      \range{pages}{1}
+      \keyw{Vakrat2000Implications}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Vakrat2000Implications'}
+    \endentry
+    \entry{Chen2007Optimal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0ecfcbee9cc6dd0c844b16637bedf029}{Chen}{C\bibinitperiod}{Shengli}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=5df9414b48582a983fa02c971c287aeb}{Wu}{W\bibinitperiod}{Huiqiu}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=3df77c1f7fc030c070e4e80810c7da46}{Luo}{L\bibinitperiod}{Yunfeng}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6708765d0523d6f6cc4636e956bdbf89}
+      \strng{fullhash}{6708765d0523d6f6cc4636e956bdbf89}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optimal Design of Online Auction}
+      \field{usera}{J}
+      \field{usere}{Shengli Chen and Huiqiu Wu and Yunfeng Luo}
+      \field{userf}{Shengli Chen and Huiqiu Wu and Yunfeng Luo}
+      \field{year}{2007}
+      \field{pages}{64\bibrangedash 70}
+      \range{pages}{7}
+      \keyw{Chen2007Optimal}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Chen2007Optimal'}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

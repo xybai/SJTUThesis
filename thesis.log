@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.20)  10 OCT 2017 11:19
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.20)  28 OCT 2017 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**thesis.tex
+**thesis
 (./thesis.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
@@ -2428,13 +2428,14 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 \c@defn=\count410
 \c@conj=\count411
 \c@exmp=\count412
-\c@rem=\count413
-\c@case=\count414
+\c@assmp=\count413
+\c@rem=\count414
+\c@case=\count415
 ) (./sjtuthesis.cfg
 File: sjtuthesis.cfg 2016/04/06 v0.9 sjtuthesis configuration file
 ) (./thesisfonts_external.sty
 Package: thesisfonts_external 2015/12/14 thesisfonts_external Package
-\g__fontspec_family_texgyretermes_int=\count415
+\g__fontspec_family_texgyretermes_int=\count416
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2499,7 +2500,7 @@ ext;+smcp;"
 * 
 * Redefining CJKfamily `\CJKrmdefault' (FandolSong-Regular(0)).
 *************************************************
-\g__fontspec_family_AdobeSongStd-Light_int=\count416
+\g__fontspec_family_AdobeSongStd-Light_int=\count417
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2566,8 +2567,8 @@ td-Regular},ItalicFont={AdobeKaitiStd-Regular}].
 *************************************************
 ) (/usr/local/texlive/2015/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2015/05/15 v3.3.2 xeCJK patch file for listings
-\l__xeCJK_listings_max_char_int=\count417
-\l__xeCJK_listings_flag_int=\count418
+\l__xeCJK_listings_max_char_int=\count418
+\l__xeCJK_listings_flag_int=\count419
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -2575,13 +2576,14 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count419
-\@quotereset=\count420
+\@quotelevel=\count420
+\@quotereset=\count421
 
 (./thesis.aux (./tex/id.aux) (./tex/abstract.aux) (./tex/symbol.aux)
-(./tex/intro.aux) (./tex/example.aux) (./tex/faq.aux) (./tex/summary.aux)
-(./tex/app_setup.aux) (./tex/app_eq.aux) (./tex/app_cjk.aux) (./tex/app_log.aux
-) (./tex/ack.aux) (./tex/pub.aux) (./tex/projects.aux))
+(./tex/background.aux) (./tex/currentResearchSituation.aux)
+(./tex/informationEntropyBasedPricing.aux)
+(./tex/informationEntropyBasedOnlineAuction.aux) (./tex/summary.aux)
+(./tex/ack.aux) (./tex/pub.aux) (./tex/projects.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -2725,20 +2727,177 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `thesis.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' not found.
-No file thesis.bbl.
+Package biblatex Info: ... file 'thesis.bbl' found.
+(./thesis.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'gantz2012digital':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'gantz2012digital'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'villars2011big':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'villars2011big'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'maitland2002european':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'maitland2002european'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'turner2014digital':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'turner2014digital'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'koutris2015query':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'koutris2015query'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'bakos2001aggregation':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'bakos2001aggregation'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'bakos1999bundling':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'bakos1999bundling'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Vickrey1961Counterspeculation':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Vickrey1961Counterspeculation'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Milgrom1989Auctions':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Milgrom1989Auctions'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Milgrom1982A':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Milgrom1982A'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Riley1981Optimal':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Riley1981Optimal'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lucking2000Auctions':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Lucking2000Auctions'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Beam1998Auctions':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Beam1998Auctions'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Pinker2001Using':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Pinker2001Using'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Roth2002Last':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Roth2002Last'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Ockenfels2006Online':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Ockenfels2006Online'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Dan2003Buying':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Dan2003Buying'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lu1996The':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Lu1996The'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Harris1981A':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Harris1981A'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'li2017first':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'li2017first'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Myerson1981Optimal':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Myerson1981Optimal'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lucking1999Using':
+(biblatex)                - Range field 'pages' in entry 'Lucking1999Using' is 
+malformed, skipping.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lucking1999Using':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Lucking1999Using'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Bradlow2007Bayesian':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Bradlow2007Bayesian'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Vakrat2000Implications':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Vakrat2000Implications'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Chen2007Optimal':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Chen2007Optimal'.
+
+)
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
-\c@lstlisting=\count421
+\c@lstlisting=\count422
 \AtBeginShipoutBox=\box112
 Package hyperref Info: Link coloring ON on input line 26.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count422
+\c@section@level=\count423
 )
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
@@ -2756,7 +2915,7 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 ) ABD: EveryShipout initializing macros
-\c__siunitx_mathsf_int=\count423
+\c__siunitx_mathsf_int=\count424
 LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -2784,7 +2943,7 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 26.
 
-\c__siunitx_mathtt_int=\count424
+\c__siunitx_mathtt_int=\count425
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
@@ -2818,7 +2977,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 . and font adjustment code:
 . 
 .................................................
-\g__fontspec_family_AdobeHeitiStd-Regular_int=\count425
+\g__fontspec_family_AdobeHeitiStd-Regular_int=\count426
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2846,16 +3005,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 . and font adjustment code:
 . 
 .................................................
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 31.
-
-\g__fontspec_family_AdobeFangsongStd-Regular_int=\count426
+\g__fontspec_family_AdobeFangsongStd-Regular_int=\count427
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2883,6 +3033,7 @@ n=4;"
 . and font adjustment code:
 . 
 .................................................
+
 [1
 
 
@@ -2892,16 +3043,7 @@ n=4;"
 
 ] [2
 
-]
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <22.08249> not available
-(Font)              size <20.74> substituted on input line 33.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <22.08249> not available
-(Font)              size <20.74> substituted on input line 33.
-
-[3
+] [3
 
 ] [4
 
@@ -2917,15 +3059,7 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <22.08249> not available
 \openout2 = `tex/abstract.aux'.
 
  (./tex/abstract.tex
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 6.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 6.
-
-\g__fontspec_family_AdobeKaitiStd-Regular_int=\count427
+\g__fontspec_family_AdobeKaitiStd-Regular_int=\count428
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2953,7 +3087,7 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <15.05624> not available
 . and font adjustment code:
 . 
 .................................................
-[1
+ [1
 
 
 
@@ -2964,7 +3098,8 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <15.05624> not available
 ] [4
 
 
-] (./thesis.toc [5
+]
+(./thesis.toc [5
 
 ])
 \tf@toc=\write7
@@ -2982,10 +3117,10 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <15.05624> not available
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
+ [9] [10
 
-[9] [10
-
-] (./thesis.loa)
+]
+(./thesis.loa)
 \tf@loa=\write10
 \openout10 = `thesis.loa'.
 
@@ -2995,383 +3130,169 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <15.05624> not available
  (./tex/symbol.tex [12
 
 
-] [13]) [14]
-\openout2 = `tex/intro.aux'.
+]) [13] [14
 
- (./tex/intro.tex
+
+]
+\openout2 = `tex/background.aux'.
+
+ (./tex/background.tex
 第一章
+File: figure/chapter1/data_market_flow.pdf Graphic file (type QTm)
+<use  "figure/chapter1/data_market_flow.pdf" >) [1
+
+
+] [2]
+\openout2 = `tex/currentResearchSituation.aux'.
+
+
+(./tex/currentResearchSituation.tex
+第二章
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\EU1/AdobeSongStd-Light(0)/m/n/10.53937 主 要 是 地 理 数
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+\EU1/AdobeSongStd-Light(0)/m/n/10.53937 交 以 及 网 络 数
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\EU1/AdobeSongStd-Light(0)/m/n/10.53937 付 费 数 据 的 免
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 23--24
+[]|\EU1/texgyretermes(0)/m/n/10.53937 API, \EU1/AdobeSongStd-Light(0)/m/n/10.53
+937 为 重 度 用
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\EU1/AdobeSongStd-Light(0)/m/n/10.53937 通 过 网 络 服 务
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\EU1/AdobeSongStd-Light(0)/m/n/10.53937 或 者 连 接 数 据
+ []
+
+[3
+
+
+
+] [4]
+Underfull \vbox (badness 6204) has occurred while \output is active []
+
+ [5]
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 86.
 
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <7.52812> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 86.
 
+) [6]
+\openout2 = `tex/informationEntropyBasedPricing.aux'.
 
-Overfull \hbox (15.885pt too wide) in paragraph at lines 38--41
-[]\EU1/AdobeSongStd-Light(0)/m/n/10.53937 中 英 文 字 体：|  操 作 系 统 中 需 要 安 装[][][][
-][][]\EU1/texgyretermes(0)/m/n/10.53937 TeX Gyre Termes \EU1/AdobeSongStd-Light
-(0)/m/n/10.53937 字 体[][][][][][]和 四 款 \EU1/texgyretermes(0)/m/n/10.53937 Adobe 
-\EU1/AdobeSongStd-Light(0)/m/n/10.53937 中 文 字 体 [][][][][][]：| \EU1/texgyreterm
-es(0)/m/n/10.53937 AdobeSongStd\EU1/AdobeSongStd-Light(0)/m/n/10.53937 、|
- []
-
-[1
-
-
-
-
-]
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no └ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no └ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no └ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no └ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no ├ in font [lmmono9-regular]!
-Missing character: There is no │ in font [lmmono9-regular]!
-Missing character: There is no └ in font [lmmono9-regular]!
-Missing character: There is no └ in font [lmmono9-regular]!
-
-Overfull \hbox (2.95056pt too wide) in paragraph at lines 128--131
-[]\EU1/AdobeSongStd-Light(0)/m/n/10.53937 格 式 控 制 文 件 控 制 着 论 文 的 表 现 形 式，|  包 
-括 以 下 几 个 文 件：| \EU1/texgyretermes(0)/m/n/10.53937 sjtuthesis.cfg, sjtuthesis.c
-ls \EU1/AdobeSongStd-Light(0)/m/n/10.53937 和 \EU1/texgyretermes(0)/m/n/10.53937
- GBT7714-
- []
-
-[2] [3]) [4]
-\openout2 = `tex/example.aux'.
-
- (./tex/example.tex
-第二章
-[5
-
-
-
-] [6]
-File: figure/example/sjtulogo.png Graphic file (type QTm)
- <use  "figure/example/sjtulogo.png" >
-File: figure/example/sjtulogo.jpg Graphic file (type QTm)
-
-<use  "figure/example/sjtulogo.jpg" >
-File: figure/example/sjtulogo.pdf Graphic file (type QTm)
- <use  "figure/example/sjtulogo.pdf" >
-File: figure/example/sjtulogo.pdf Graphic file (type QTm)
-
-<use  "figure/example/sjtulogo.pdf" > (./figure/example/flow_chart.tex)
-[7] [8] [9]
-Overfull \hbox (1.66736pt too wide) in paragraph at lines 264--264
-[]|\EU1/texgyretermes(0)/m/n/10.53937 total|  
- []
-
-[10
-
-]
-
-LaTeX Warning: Citation 'Meta_CN' on page 11 undefined on input line 321.
-
-
-LaTeX Warning: Citation 'chen2007act' on page 11 undefined on input line 321.
-
-
-LaTeX Warning: Citation 'DPMG' on page 11 undefined on input line 321.
-
-
-LaTeX Warning: Citation 'JohnD' on page 11 undefined on input line 322.
-
-
-LaTeX Warning: Citation 'zhubajie' on page 11 undefined on input line 322.
-
-
-LaTeX Warning: Citation 'IEEE-1363' on page 11 undefined on input line 322.
-
-
-LaTeX Warning: Citation 'Meta_CN' on page 11 undefined on input line 323.
-
-
-LaTeX Warning: Citation 'JohnD' on page 11 undefined on input line 323.
-
-
-LaTeX Warning: Citation 'IEEE-1363' on page 11 undefined on input line 323.
-
-
-LaTeX Warning: Citation 'chen2007act' on page 11 undefined on input line 323.
-
-
-LaTeX Warning: Citation 'chen2007ewi' on page 11 undefined on input line 323.
-
-
-LaTeX Warning: Citation 'DPMG' on page 11 undefined on input line 324.
-
-
-LaTeX Warning: Citation 'kocher99' on page 11 undefined on input line 324.
-
-
-LaTeX Warning: Citation 'cnproceed' on page 11 undefined on input line 324.
-
-
-LaTeX Warning: Citation 'zhubajie' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'metamori2004' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'shaheshang' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'FistSystem01' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'bai2008' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'IEEE-1363' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'NPB2' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'xiaoyu2001' on page 11 undefined on input line 325.
-
-
-LaTeX Warning: Citation 'CHRISTINE1998' on page 11 undefined on input line 325.
-
-
-
-LaTeX Warning: Citation 'RManual' on page 11 undefined on input line 325.
-
-[11] (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-)
-LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <7.52812> not available
-(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 343.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 385.
- [12])
-[13] [14] [15]
-\openout2 = `tex/faq.aux'.
-
- (./tex/faq.tex [16
-
-
-
-]
+ (./tex/informationEntropyBasedPricing.tex
 第三章
-[17]) [18]
+) [7
+
+
+
+]
+\openout2 = `tex/informationEntropyBasedOnlineAuction.aux'.
+
+ (./tex/informationEntropyBasedOnlineAuction.tex [8
+
+
+
+]
+第四章
+[9]
+File: figure/chapter4/3_days_hist.pdf Graphic file (type QTm)
+ <use  "figure/chapter4/3_days_hist.pdf" >
+File: figure/chapter4/5_days_hist.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/5_days_hist.pdf" >
+File: figure/chapter4/7_days_hist.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/7_days_hist.pdf" >
+
+LaTeX Warning: Float too large for page by 5.45966pt on input line 35.
+
+
+Underfull \vbox (badness 4072) has occurred while \output is active []
+
+ [10]
+[11] [12] [13]) [14]
 \openout2 = `tex/summary.aux'.
 
- (./tex/summary.tex) [19
+ (./tex/summary.tex) [15
 
 
 
-]
-\openout2 = `tex/app_setup.aux'.
-
- (./tex/app_setup.tex [20
+] [16
 
 
+] [17
 
 ]
-附录 A
-
-Overfull \hbox (3.67778pt too wide) in paragraph at lines 36--37
-[]\EU1/texgyretermes(0)/m/n/10.53937 RedHat/CentOS \EU1/AdobeSongStd-Light(0)/m
-/n/10.53937 用 户 请 先 将 字 体 文 件 复 制 到 字 体 目 录 下，|  调 用 \EU1/texgyretermes(0)/m/n/
-10.53937 fc-cache \EU1/AdobeSongStd-Light(0)/m/n/10.53937 刷 新 缓 存 后 即 可 在 \EU1/
-texgyretermes(0)/m/n/10.53937 TeXLive
- []
-
-) [21]
-\openout2 = `tex/app_eq.aux'.
-
- (./tex/app_eq.tex [22
-
-
-
-]
-附录 B
-) [23]
-\openout2 = `tex/app_cjk.aux'.
-
- (./tex/app_cjk.tex [24
-
-
-
-]
-附录 C
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\xl@everylogo' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern -1.31741pt
-(hyperref)                removed on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lower' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\multiply' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@ne' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\char' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern -1.75693pt
-(hyperref)                removed on input line 2.
-
-) [25]
-\openout2 = `tex/app_log.aux'.
-
- (./tex/app_log.tex [26
-
-
-
-]
-附录 D
-) [27] [28
-
-
-]
-
-LaTeX Warning: Empty bibliography on input line 92.
-
+Missing character: There is no ☆ in font [fonts/texgyretermes-regular.otf]/OT:s
+cript=latn;language=DFLT;mapping=tex-text;!
+ [18]
 \openout2 = `tex/ack.aux'.
 
-(./tex/ack.tex) [29
+ (./tex/ack.tex)
+[19
 
 
 ]
 \openout2 = `tex/pub.aux'.
 
- (./tex/pub.tex [30
+ (./tex/pub.tex [20
 
 
 
-]) [31]
+]) [21]
 \openout2 = `tex/projects.aux'.
 
- (./tex/projects.tex [32
+ (./tex/projects.tex [22
 
 
 
-])
-[33] 
+]) [23]
+
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
 (./thesis.aux (./tex/id.aux) (./tex/abstract.aux) (./tex/symbol.aux)
-(./tex/intro.aux) (./tex/example.aux) (./tex/faq.aux) (./tex/summary.aux)
-(./tex/app_setup.aux) (./tex/app_eq.aux) (./tex/app_cjk.aux) (./tex/app_log.aux
-) (./tex/ack.aux) (./tex/pub.aux) (./tex/projects.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 127.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 127.
+(./tex/background.aux) (./tex/currentResearchSituation.aux)
+(./tex/informationEntropyBasedPricing.aux)
+(./tex/informationEntropyBasedOnlineAuction.aux) (./tex/summary.aux)
+(./tex/ack.aux) (./tex/pub.aux) (./tex/projects.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.34248pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
+(Font)              up to 0.47188pt have occurred.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51789 strings out of 493706
- 1053223 string characters out of 6145769
- 1507043 words of memory out of 5000000
- 54190 multiletter control sequences out of 15000+600000
- 39768 words of font info for 234 fonts, out of 8000000 for 9000
+ 51028 strings out of 493706
+ 1033259 string characters out of 6145769
+ 1414535 words of memory out of 5000000
+ 53476 multiletter control sequences out of 15000+600000
+ 24361 words of font info for 157 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,17n,82p,10440b,1553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,14n,82p,10436b,1491s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (55 pages).
+Output written on thesis.pdf (45 pages).

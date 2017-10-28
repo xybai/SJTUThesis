@@ -260,6 +260,7 @@
   \newtheorem{defn}{\sjtu@label@defn~}[chapter]
   \newtheorem{conj}{\sjtu@label@conj~}[chapter]
   \newtheorem{exmp}{\sjtu@label@exmp~}[chapter]
+  \newtheorem{assmp}{\sjtu@label@assmp~}[chapter]
   \newtheorem{rem}{\sjtu@label@rem~}
   \newtheorem{case}{\sjtu@label@case~}
 \theoremstyle{break}
