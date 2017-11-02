@@ -257,6 +257,7 @@
   \newtheorem{prop}[thm]{\sjtu@label@prop~}
   \newtheorem{cor}[thm]{\sjtu@label@cor~}
 \theoremstyle{definition}
+  \newtheorem{propt}{\sjtu@label@propt~}[chapter]
   \newtheorem{defn}{\sjtu@label@defn~}[chapter]
   \newtheorem{conj}{\sjtu@label@conj~}[chapter]
   \newtheorem{exmp}{\sjtu@label@exmp~}[chapter]

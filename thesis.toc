@@ -12,30 +12,33 @@
 \contentsline {section}{\numberline {2.4}商品在线拍卖}{6}{section.2.4}
 \contentsline {section}{\numberline {2.5}本章小结}{6}{section.2.5}
 \contentsline {chapter}{\numberline {第三章\hspace {0.3em}}基于信息熵的数据定价研究}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}定价策略与模型}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}问题定义}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}数据商品信息量的测量}{7}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}通用定价模型}{7}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}讨论}{7}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}实验与评估}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}实践中遇到的问题}{7}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}在公开研究数据集上的实验}{7}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}在大规模工业数据集上的实验}{7}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}定价函数}{7}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}本章小结}{7}{section.3.3}
-\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}基于信息熵的数据商品在线拍卖的研究}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}研究动机}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}影响在线拍卖的重要因素}{9}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}拍卖机制}{9}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}竞拍时长与参与人数}{10}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}起拍价与保留价}{12}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}基于信息熵的在线拍卖模型}{12}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}带保留价的单件物品在线拍卖}{14}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}带保留价的多件物品在线拍卖}{14}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}模型评估}{14}{section.4.4}
-\contentsline {section}{\numberline {4.5}本章小结}{14}{section.4.5}
-\contentsline {chapter}{全文总结}{15}{chapter*.8}
-\contentsline {chapter}{参考文献}{17}{appendix*.9}
-\contentsline {chapter}{致\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}谢}{19}{appendix*.10}
-\contentsline {chapter}{攻读学位期间发表的学术论文}{21}{appendix*.11}
-\contentsline {chapter}{攻读学位期间参与的项目}{23}{appendix*.12}
+\contentsline {section}{\numberline {3.1}研究动机}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}定价策略与模型}{7}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}问题定义}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}数据商品信息量的测量}{9}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}通用定价模型}{12}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}讨论}{13}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}实验与评估}{13}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}实践中遇到的问题}{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}在公开研究数据集上的实验}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}在大规模工业数据集上的实验}{13}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}定价函数}{13}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}本章小结}{13}{section.3.4}
+\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}基于信息熵的数据商品在线拍卖的研究}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}研究动机}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}影响在线拍卖的重要因素}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}拍卖机制}{15}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}竞拍时长与参与人数}{16}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}起拍价与保留价}{18}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}基于信息熵的在线拍卖模型}{18}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}带保留价的单件物品在线拍卖}{20}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}带保留价的多件物品在线拍卖}{22}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}模型评估}{22}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}卖家期望收益与保留价的关系}{22}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}成交价$E(v^{(2)})$的数值结果}{23}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}本章小结}{23}{section.4.5}
+\contentsline {chapter}{全文总结}{27}{chapter*.8}
+\contentsline {chapter}{参考文献}{29}{appendix*.9}
+\contentsline {chapter}{致\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}谢}{33}{appendix*.10}
+\contentsline {chapter}{攻读学位期间发表的学术论文}{35}{appendix*.11}
+\contentsline {chapter}{攻读学位期间参与的项目}{37}{appendix*.12}

@@ -17,7 +17,7 @@
 大量关于在线拍卖的研究是集中在前向拍卖 (forward auction), 即是一个卖家向多个买家拍卖物品。以上提到的四个拍卖机制均是前向拍卖。然而，还是存在另外一大类拍卖，反向拍卖 (reverse auction)，即一个买家需要买一件物品，多个卖家以竞争的方式提供该物品，这个场景多出现在政府项目招标中。然而，对于数据的在线拍卖，是不太适合使用反向拍卖作为拍卖机制的，因为目前市场上并没有足够多的数据提供商去满足众多数据买家的需求。
 
 \subsection{竞拍时长与参与人数}
-
+\label{subsec:auction duration and bidder number}
 竞拍时长在在线拍卖中有着很大的作用。相比于传统的只持续数十分钟或数个小时的传统公开拍卖，在线拍卖往往会持续数天或数周。因为在线拍卖不会要求竞拍人到场，他们能在任何地点任何时间参与拍卖\cite{Pinker2003Managing}。因此，持续时间很长的在线拍卖是可行的。传统拍卖往往会以一个固定的竞拍人数开始拍卖，而相应的关于期望收益和最优保留价的分析都是基于这固定的竞拍人数的。但是，同样的分析方法就不适用于在线拍卖。因为，在网络上，在线拍卖的人数是不固定的，而在线拍卖的竞拍人数往往是由竞拍时长决定的。
 
 \begin{figure}
@@ -133,12 +133,182 @@ R_s=n\int_{r}^{v_h}(xf(x)+F(x)-1)F^{(n-1)}(x)dx.
 R_s^{online}=E_N(R_s).
 \end{equation}
 
-Chen等人\cite{Chen2007Optimal}将竞拍者参与在线拍卖的过程建模为一个到达率为常量$\lambda$的泊松过程。本文提出的在线拍卖模型也是一个泊松过程，但是该到达率
+Chen等人\cite{Chen2007Optimal}将竞拍者参与在线拍卖的过程建模为一个到达率为常量$\lambda$的泊松过程。本文提出的在线拍卖模型也是一个泊松过程，但是该到达率是在不同时段是变化的。我之所以这样建模是基于对eBay Live Auction拍卖数据记录的观察，在小节\ref{subsec:auction duration and bidder number}中描述了竞拍者在竞拍过程中的到达率是不一样的，一般是初期的到达率很高，中期到达率比较低，然后到竞拍快结束时达到最高峰。因此，我们将整个竞拍时长$[0,T]$划分为$M$个不重叠的子区域$\{I_i\}_{i=1}^M$，其中$I_i=[t_{i-1},t_i]$。在不同的子区间中，到达率$\lambda$取不同的值 $\{\lambda_1,\lambda_2,...,\lambda_M\}$，但在子区间内到达率保持不变。因此，对于一个在时间区间$I_i=[t_{i-1},t_i]$保留价为$r$的在线拍卖而言，有$n_i$个人参与的概率为：
+\begin{equation}
+\label{eq:Ni}
+P(N_i=n_i|\lambda_i)=\frac{e^{-z_i}z_i^{n_i}}{n_i!},
+\end{equation}
+其中，$z_i=\lambda_i(t_i-t_{i-1})(1-F(r))$，$N_i$是在时间区间$I_i=[t_{i-1},t_i]$内参与拍卖的人数。为了易于建模，在本文中假设不同区间内的到达率$\lambda_i$是相互独立的。但是，在实际中，不同区间的竞拍者到达率却是与其前一个到达率和当前最高出价$b^*$相关的。对于竞拍者到达过程更加精确的建模是本文未来的工作之一。那么，总共有$N$个竞拍者参与此次拍卖的概率为：
+\begin{equation}
+\label{eq:N}
+P(N=n_1+n_2+...+n_M|\vec{\lambda})=\prod_{i=1}^{M}P(N_i=n_i|\lambda_i),
+\end{equation}
+其中$\vec{\lambda}$是参数向量$(\lambda_1,\lambda_2,...,\lambda_M)$。在所有$(n_1,n_2,...,n_M)$可能取值上的$P(N=n_1+n_2+...+n_M|\vec{\lambda})$的和完全定义了在时间段$[0,T]$上有$N$个人的概率空间。此外，参数向量$\vec{\lambda}$是取决于时间段$[0,T]$的划分的。一旦确定了时间段的划分规则，我们就能使用极大似然估计\cite{Bock1982Marginal,Zhou2017An}从之前收集到的拍卖数据估计出$\vec{\lambda}$。
 
+在数据卖家出售其数据商品之前，他还有收集和清理数据商品的固定成本。我们将这一成本定义为$c$。基于公式(\ref{eq:basic expected revenue}) (\ref{eq:basic online expected revenue}) (\ref{eq:Ni})以及(\ref{eq:N})，本文为在线第二价格拍卖定义了以下的卖家期望收益：
 
+\begin{defn}[卖家期望收益]
+ \label{seller revenue defintion}
+	假设对称独立私有价值条件被满足，且卖家设置了保留价$r$，其固定成本为$c$，那么对于该卖家的期望收益为：
+
+	\begin{equation}
+	\label{eq:single item expected revenue}
+	\begin{aligned}
+	R_{s}^{online}&=E_N(R_s|\vec{\lambda})-c\\
+	&=\sum_{n_1=0}^{\infty}\sum_{n_2=0}^{\infty}...\sum_{n_M=0}^{\infty}\prod_{i=1}^{M}P(N_i=n_i|\lambda_i)R_s-c.
+%	&=\sum_{n=0}^{\infty}P_T(N=n)R_s-c\\
+%	&=\sum_{n=0}^{\infty}\frac{e^{-z}z^n}{n!}R_s-c\\
+%	&=\sum_{n=0}^{\infty}\frac{e^{-z}z^n}{(n-1)!}\int_{r}^{v_h}[xf(x)\\
+%	&+F(x)-1)]F^{(n-1)}(x)dx-c,
+	%&=\sum_{n=0}^{\infty}\frac{e^{-z}z^n}{n!}v_0F^n(r)-c+\\
+	%&\sum_{n=0}^{\infty}\frac{e^{-z}z^n}{n!}n\int_{r}^{v_h}(xf(x)+F(x)-1)F^{(n-1)}(x)dx
+	%&=v_0exp[\lambda t(1-F(r))^2]+\\
+	%&\lambda t\int_{r}^{v_h}[F(x)+xf(x)-1]exp[-\lambda t(1-F(r)(1-F(x))]dx
+	\end{aligned}
+	\end{equation}
+
+需要强调的是$R_s$中的$n$是被$n_1+n_2+...+n_M$替换的。
+\end{defn}
+
+\begin{prop}
+\label{proposition1}
+对于在线第二价格拍卖，如果对称独立私有价值条件被满足，卖家的最优保留价为：
+\begin{equation}
+	\label{eq:optimal reserve price}
+	r^*=\frac{1-F(r^*)}{f(r^*)},
+\end{equation}
+
+这样，卖家就能获得最大的期望收益。此外，观察上式可以发现最优保留价$r^*$是独立于竞拍者人数的。
+\end{prop}
+
+根据Vickrey的洞见\cite{Vickrey1961Counterspeculation}，竞拍者在第二价格拍卖中的最优竞拍策略就是尽可能地出他的真实估价，即$b_i(v_i)=v_i$。那些出价最高的竞拍者赢得商品，他们需要支付$p_i(v)$。在单件商品第二价格拍卖中，竞拍获胜者只有一位。因此，竞拍获胜者支付价格为$b^*_2(v)$，即该次拍卖中的第二高竞拍价。由于$b_i(v_i)=v_i$，因此$b^*_2(v)=v^{(2)}$。而$v^{(2)}$也是一个随机变量，其概率密度函数\cite{Riley1981Optimal}定义为：
+\begin{equation}
+p(v^{(2)})=n(n-1)f(v^{(2)})F^{(n-2)}(v^{(2)})[1-F(v^{(2)})].
+\end{equation}
+
+\begin{defn}[竞拍胜者支付价格]
+	\label{winning price definition}
+	假设对称独立私有价值条件被满足，竞拍胜者的期望支付价格$v^{(2)}$定义为:
+	\begin{equation}
+	E(v^{(2)})=\sum_{n_1=0}^{\infty}\sum_{n_2=0}^{\infty}...\sum_{n_M=0}^{\infty}\prod_{i=1}^{M}P(N_i=n_i|\lambda_i)\int_{r}^{v_h}p(x)dx.
+	%\sum_{n=0}^{\infty}P_T(n) \int_{r}^{v_h}n(n-1)f(x)F^{(n-2)}(x)[1-F(x)]xdx\\
+	%&=\sum_{n=0}^{\infty}\frac{e^{-z}z^n}{(n-2)!}\int_{r}^{v_h}f(x)F^{n-2}(x)[1-F(x)]xdx.
+	\end{equation}
+\end{defn}
+
+$E(v^{(2)})$也是拍卖物品的最后成交价，它也可以被视为数据商品$D$的定价函数$pr(\dot)$。Li\cite{li2017first}等人讨论了基于数据信息上的定价函数需要满足什么样的条件能使得该函数是无套利的。在本文中，我将$E(v^{(2)})$视为与数据信息熵$H$的联系函数因为根据公式(\ref{eq:v_l})和(\ref{eq:v_h})。
+
+\begin{prop}
+\label{proposition2}
+	期望成交价$E(v^{(2)})$是无套利的， 如果 1) $E(v^{(2)})$ 是凹函数; 2) 放大系数满足如下公式：
+	\begin{equation}
+		\frac{f(\alpha H)[1-F(\alpha H)]}{f(H)[1-F(H)]} \ge 1. 
+	\end{equation}
+\end{prop}
+
+在实际中，放大系数$\alpha$是取决于竞拍者对于数据商品价值的主观估计，所以$\alpha$也是一个随机变量。该变量能帮助我们判断基于信息熵的在线拍卖无套利的概率，如何估计这一概率是我们未来的工作之一。
 
 \subsection{带保留价的多件物品在线拍卖}
+在多件物品的在线拍卖中，数据卖家会以一个公开的保留价$r$出售$k$件相同的数据商品。假设在拍卖进行的时刻$T$有$N$个风险中立的竞拍者参与进来，并且每一个竞拍者只想拍一件商品。在多件物品在线拍卖中，我们采用第$k$价格拍卖规则，其中竞拍获胜者是出价前$k$高的人，他们只需支付第$k+1$高的出价来获得拍品，第$k+1$高的出价记为$b^{(k+1)}$（从另一个角度来说，这也是最低竞拍获胜价格）。而对于竞拍者来说，他们的最优竞拍策略仍是出他们的真实估价，即$b_i(v_i)=v_i$. 因此， $b^{(k+1)}=v^{(k+1)}$。
+
+下面，我们讨论$v^{(k+1)}$的期望着。假设已有$n>k$个人竞拍者参与拍卖。那么其中$k$个竞拍者出价高于或等于$v^{(k+1)}$，剩下$n-k$个竞拍者出价低于$v^{(k+1)}$的概率是$C^{k}_{n}F^{(n-k)}(v^{(k+1)})[1-F(v^{(k+1)})]^k$。那么，$v^{(k+1)}$的期望值为：
+\begin{equation}
+\begin{aligned}
+	E(v^{(k+1)}) =&\int_{r}^{v_h}\frac{n!}{k!(n-k)!}F^{(n-k)}(v^{(k+1)})\\
+&[1-F(v^{(k+1)})]^kf(v)vdv.
+\end{aligned}
+\end{equation}
+其中竞拍人数$N$是一个随机变量，因此$v^{(k+1)}$对于拍卖人数$N$的期望为：
+\begin{equation}
+E_N(v^{(k+1)}|\vec{\lambda}) = \sum_{n_1=0}^{\infty}\sum_{n_2=0}^{\infty}...\sum_{n_M=0}^{\infty}\prod_{i=1}^{M}P(N_i=n_i|\lambda_i)E(v^{(k+1)}).
+\end{equation}
+
+$E_N(v^{(k+1)}|\vec{\lambda})$为这$k$件商品的最终成交价。如果卖家的固定成本$c$被计算在内的话，那么卖家的期望收益是 $kE_N(v^{(k+1)}|\vec{\lambda})-c$，即：
+\begin{equation}
+R_{s,k}^{online} = k(E_N(v^{(k+1)}|\vec{\lambda})-c).
+\end{equation}
 
 \section{模型评估}
 
+在本小节中，我们为本文提出的一系列定义和命题给出可视化的数值结果。
+
+\subsection{卖家期望收益与保留价的关系}
+
+在前文中，我们已经定义了卖家的期望收益$R_s^{online}$和相应的最优保留价$r$。我们将通过观察$R_s^{online}$随保留价$r$的变化趋势来验证我们提出的卖家期望收益$R_s^{online}$和最优保留价$r$的合理性。这里，精确的$R_s^{online}$是根据公式(\ref{eq:single item expected revenue})求得。为了简化计算，我们将公式(\ref{eq:basic online expected revenue})中的多阶段泊松过程简化成了一阶段泊松过程以此来计算了近似的$R_s^{online}$，即：
+\begin{equation}
+\label{eq:simplified online expected revenue}
+\begin{aligned}
+R_s^{online}=\lambda T \int_{r}^{v_h} [F(x)+xf(x)-1]\exp[-\lambda T(1-F(r))(1-F(x))]dx.
+\end{aligned}
+\end{equation}
+
+\begin{figure}[b]
+	\centering
+	\subfigure[$T=3,v_l=10,v_h=100$]{
+		\label{fig:T=3vl=10vh=100}
+		\includegraphics[width=0.4\textwidth]{chapter4/T=3vl=10vh=100.pdf}
+	}
+	\subfigure[$T=5,v_l=10,v_h=100$]{
+		\label{fig:T=5vl=10vh=100}
+		\includegraphics[width=0.4\textwidth]{chapter4/T=5vl=10vh=100.pdf}
+	}
+	\subfigure[$T=10,v_l=10,v_h=100$]{
+		\label{fig:T=7vl=10vh=100}
+		\includegraphics[width=0.4\textwidth]{chapter4/T=7vl=10vh=100.pdf}
+	}
+	\subfigure[$T=3,v_l=100,v_h=200$]{
+		\label{fig:T=3vl=100vh=200}
+		\includegraphics[width=0.4\textwidth]{chapter4/T=3vl=100vh=200.pdf}
+	}
+	\subfigure[$T=5,v_l=100,v_h=200$]{
+		\label{fig:T=5vl=100vh=200}
+		\includegraphics[width=0.4\textwidth]{chapter4/T=5vl=100vh=200.pdf}
+	}
+	\subfigure[$T=7,v_l=100,v_h=200$]{
+		\label{fig:T=7vl=100vh=200}
+		\includegraphics[width=0.4\textwidth]{chapter4/T=7vl=100vh=200.pdf}
+	}
+	\bicaption[fig:numercal result1]{在不同参数设置下的卖家平均收益与保留价的变化趋势}{在不同参数设置下的卖家平均收益与保留价的变化趋势}{Fig}{Relationship between revenue and reserve price under different parameter configurations}
+\end{figure}
+
+这里我们将拍卖时长$T$分别设置成$3,5,7$天，竞拍者到达率在[1.0,4.0]内变化。此外，我们还假设拍卖参与者的估价服从一个均匀分布，记为$v_i \thicksim U[v_l,v_h]$。我们选择$[10,100]$和$[100,200]$作为分布区间。接着，根据公式(\ref{eq:simplified online expected revenue})计算卖家的期望收益，计算结果绘制在图\ref{fig:numercal result1}中。
+
+
+
+
+通过观察图\ref{fig:numercal result1}中，我们发现在每一个子图中所有曲线都呈现出相同的趋势，即卖家收益首先会随着保留价的增加而升高，随着保留价增加到最优保留价$r^*$而达到最大值，然后随着保留价的继续增加而下降。需要指出的是，我们这里的最优保留价$r^*$是根据命题\ref{proposition2}中的公式(\ref{eq:optimal reserve price})计算出来的。除此以外我们还观察到：1）那些有着更高到达率的曲线是能完全覆盖那些有着较低到达率的曲线；2）拍卖持续的时间越长，卖家期望收益越高；3）估价区间范围越大，卖家期望收益越高。
+
+\subsection{成交价$E(v^{(2)})$的数值结果}
+
+定义\ref{winning price definition}给出了第二价格在线拍卖中成交价$E(v^{(2)})$。类似于前面卖家期望收益的计算，在这里我们也将$E(v^{(2)})$的计算简化为：
+\begin{equation}
+\label{eq:simplified online expected winning price}
+\begin{aligned}
+E(v^{(2)}) = &\sum_{n=0}^{\infty}\frac{e^{-z}z^{n}}{n!} \int_{r}^{v_h} n(n-1)f(x)\\
+&F^{(n-2)}(x)[1-F(x)]dx,
+\end{aligned}
+\end{equation}
+其中$z=\lambda T(1-F(r))$，$T$是在线拍卖竞拍时长。
+
+在$E(v^{(2)})$的结果展示中，我们的参数设置与前一小节相同。需要指出的是，这里的保留价也设置成之前计算出来的最优保留价，因为只有当保留价达到最优值时，$E(v^{(2)})$才会达到最大值。相关结果呈现在图\ref{fig:numercal result2}。
+
+\begin{figure}[h]
+	\centering
+	\subfigure[$v_l=10,v_h=100$]{
+		\label{fig:vl=10vh=100}
+		\includegraphics[width=0.55\textwidth]{chapter4/expected_price_vl=10vh=100.pdf}
+	}
+	\subfigure[$v_l=100,v_h=200$]{
+		\label{fig:vl=100vh=200}
+		\includegraphics[width=0.55\textwidth]{chapter4/expected_price_vl=100vh=200.pdf}
+	}
+	\bicaption[fig:numercal result2]{在不同参数设置下的期望成交价$E(v^{(2)})$}{在不同参数设置下的期望成交价$E(v^{(2)})$}{Fig}{Numerical results of expected winning price $E(v^{(2)})$ under different parameter configurations}
+\end{figure}
+
+从图\ref{fig:numercal result2}中可以看出：1）拍卖持续时间越长，其拍品成交价就越高；2）较高的到达率会造成较高的期望成交价，这也意味着到达率可以一定程度上表示在线拍卖市场的竞争激烈程度；3）高估值的拍品最后的成交价都很高。
+
+以上所有的数值结果与现有在线拍卖市场的经验调查是相符的，那么这意味着本文提出的模型是有能力模拟在线数据拍卖市场的。
+
 \section{本章小结}
+
+本小节提出了一个基于数据信息熵的在线数据拍卖模型。在叙述这个模型之前，我们分析了那些最影响现有传统商品在线拍卖的因素，比如拍卖机制、拍卖持续时长、拍卖参与人数以及保留价等等。在全面考虑了以上因素后，我们提出了基于数据信息熵的第$k$价格在线数据拍卖模型。在这个模型中，数据商品的数据信息熵被作为估价的参考。在这个模型的基础上，我们进一步分析了其最优保留价、期望成交价在不同出售数量下的变化趋势。此外，本文提出的一些命题和定义也在模型评估阶段进行了可视化的呈现。我们希望本文提出的模型和分析结果能给现有的在线数据拍卖市场提供些许启发，从而最大化拍卖参与者的总剩余，进一步繁荣整个数据市场。

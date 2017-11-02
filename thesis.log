@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.20)  28 OCT 2017 10:38
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.20)  2 NOV 2017 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2425,17 +2425,18 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 ))
 \c@algo=\count408
 \c@thm=\count409
-\c@defn=\count410
-\c@conj=\count411
-\c@exmp=\count412
-\c@assmp=\count413
-\c@rem=\count414
-\c@case=\count415
+\c@propt=\count410
+\c@defn=\count411
+\c@conj=\count412
+\c@exmp=\count413
+\c@assmp=\count414
+\c@rem=\count415
+\c@case=\count416
 ) (./sjtuthesis.cfg
 File: sjtuthesis.cfg 2016/04/06 v0.9 sjtuthesis configuration file
 ) (./thesisfonts_external.sty
 Package: thesisfonts_external 2015/12/14 thesisfonts_external Package
-\g__fontspec_family_texgyretermes_int=\count416
+\g__fontspec_family_texgyretermes_int=\count417
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2500,7 +2501,7 @@ ext;+smcp;"
 * 
 * Redefining CJKfamily `\CJKrmdefault' (FandolSong-Regular(0)).
 *************************************************
-\g__fontspec_family_AdobeSongStd-Light_int=\count417
+\g__fontspec_family_AdobeSongStd-Light_int=\count418
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2567,8 +2568,8 @@ td-Regular},ItalicFont={AdobeKaitiStd-Regular}].
 *************************************************
 ) (/usr/local/texlive/2015/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2015/05/15 v3.3.2 xeCJK patch file for listings
-\l__xeCJK_listings_max_char_int=\count418
-\l__xeCJK_listings_flag_int=\count419
+\l__xeCJK_listings_max_char_int=\count419
+\l__xeCJK_listings_flag_int=\count420
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -2576,8 +2577,8 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count420
-\@quotereset=\count421
+\@quotelevel=\count421
+\@quotereset=\count422
 
 (./thesis.aux (./tex/id.aux) (./tex/abstract.aux) (./tex/symbol.aux)
 (./tex/background.aux) (./tex/currentResearchSituation.aux)
@@ -2845,6 +2846,12 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'shannon2001mathematical':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'shannon2001mathematical'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'li2017first':
 (biblatex)                - Overwriting field 'year' with year value from field
  'date' for entry 'li2017first'.
@@ -2885,10 +2892,22 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Overwriting field 'year' with year value from field
  'date' for entry 'Chen2007Optimal'.
 
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Bock1982Marginal':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Bock1982Marginal'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Zhou2017An':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Zhou2017An'.
+
 )
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
-\c@lstlisting=\count422
+\c@lstlisting=\count423
 \AtBeginShipoutBox=\box112
 Package hyperref Info: Link coloring ON on input line 26.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -2897,7 +2916,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count423
+\c@section@level=\count424
 )
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
@@ -2915,7 +2934,7 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 ) ABD: EveryShipout initializing macros
-\c__siunitx_mathsf_int=\count424
+\c__siunitx_mathsf_int=\count425
 LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -2943,7 +2962,7 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 26.
 
-\c__siunitx_mathtt_int=\count425
+\c__siunitx_mathtt_int=\count426
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
@@ -2977,7 +2996,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 . and font adjustment code:
 . 
 .................................................
-\g__fontspec_family_AdobeHeitiStd-Regular_int=\count426
+\g__fontspec_family_AdobeHeitiStd-Regular_int=\count427
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3005,7 +3024,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 . and font adjustment code:
 . 
 .................................................
-\g__fontspec_family_AdobeFangsongStd-Regular_int=\count427
+\g__fontspec_family_AdobeFangsongStd-Regular_int=\count428
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3059,7 +3078,7 @@ n=4;"
 \openout2 = `tex/abstract.aux'.
 
  (./tex/abstract.tex
-\g__fontspec_family_AdobeKaitiStd-Regular_int=\count428
+\g__fontspec_family_AdobeKaitiStd-Regular_int=\count429
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3200,20 +3219,53 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <7.52812> not available
 
  (./tex/informationEntropyBasedPricing.tex
 第三章
-) [7
+[7
 
 
 
 ]
+File: figure/chapter3/attr_pre.pdf Graphic file (type QTm)
+ <use  "figure/chapter3/attr_pre.pdf" >
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 47.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 47.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 47.
+
+[8]
+Missing character: There is no ， in font [fonts/texgyretermes-regular.otf]/OT:s
+cript=latn;language=DFLT;mapping=tex-text;!
+Missing character: There is no 。 in font [fonts/texgyretermes-regular.otf]/OT:s
+cript=latn;language=DFLT;mapping=tex-text;!
+Missing character: There is no 。 in font [fonts/texgyretermes-regular.otf]/OT:s
+cript=latn;language=DFLT;mapping=tex-text;!
+ [9]
+Missing character: There is no 。 in font [fonts/texgyretermes-regular.otf]/OT:s
+cript=latn;language=DFLT;mapping=tex-text;!
+Missing character: There is no 。 in font [fonts/texgyretermes-regular.otf]/OT:s
+cript=latn;language=DFLT;mapping=tex-text;!
+ [10] [11]
+File: figure/chapter3/joint_data_set.pdf Graphic file (type QTm)
+ <use  "figure/chapter3/joint_data_set.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [12] [13]
 \openout2 = `tex/informationEntropyBasedOnlineAuction.aux'.
 
- (./tex/informationEntropyBasedOnlineAuction.tex [8
+ (./tex/informationEntropyBasedOnlineAuction.tex [14
 
 
 
 ]
 第四章
-[9]
+[15]
 File: figure/chapter4/3_days_hist.pdf Graphic file (type QTm)
  <use  "figure/chapter4/3_days_hist.pdf" >
 File: figure/chapter4/5_days_hist.pdf Graphic file (type QTm)
@@ -3228,45 +3280,83 @@ LaTeX Warning: Float too large for page by 5.45966pt on input line 35.
 
 Underfull \vbox (badness 4072) has occurred while \output is active []
 
- [10]
-[11] [12] [13]) [14]
+ [16]
+[17] [18] [19] [20] [21]
+File: figure/chapter4/T=3vl=10vh=100.pdf Graphic file (type QTm)
+ <use  "figure/chapter4/T=3vl=10vh=100.pdf" >
+File: figure/chapter4/T=5vl=10vh=100.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/T=5vl=10vh=100.pdf" >
+File: figure/chapter4/T=7vl=10vh=100.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/T=7vl=10vh=100.pdf" >
+File: figure/chapter4/T=3vl=100vh=200.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/T=3vl=100vh=200.pdf" >
+File: figure/chapter4/T=5vl=100vh=200.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/T=5vl=100vh=200.pdf" >
+File: figure/chapter4/T=7vl=100vh=200.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/T=7vl=100vh=200.pdf" > [22]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 281.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 281.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 281.
+
+File: figure/chapter4/expected_price_vl=10vh=100.pdf Graphic file (type QTm)
+<use  "figure/chapter4/expected_price_vl=10vh=100.pdf" >
+File: figure/chapter4/expected_price_vl=100vh=200.pdf Graphic file (type QTm)
+
+<use  "figure/chapter4/expected_price_vl=100vh=200.pdf" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [23] [24] [25]
 \openout2 = `tex/summary.aux'.
 
- (./tex/summary.tex) [15
+ (./tex/summary.tex [26
 
 
 
-] [16
+]) [27] [28
 
 
-] [17
+] [29
 
 ]
 Missing character: There is no ☆ in font [fonts/texgyretermes-regular.otf]/OT:s
 cript=latn;language=DFLT;mapping=tex-text;!
- [18]
+ [30] [31]
 \openout2 = `tex/ack.aux'.
 
- (./tex/ack.tex)
-[19
+
+(./tex/ack.tex [32
 
 
-]
+]) [33]
 \openout2 = `tex/pub.aux'.
 
- (./tex/pub.tex [20
+ (./tex/pub.tex [34
 
 
 
-]) [21]
+]) [35]
 \openout2 = `tex/projects.aux'.
 
- (./tex/projects.tex [22
+ (./tex/projects.tex
+[36
 
 
 
-]) [23]
-
+]) [37] 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
@@ -3287,12 +3377,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51028 strings out of 493706
- 1033259 string characters out of 6145769
- 1414535 words of memory out of 5000000
- 53476 multiletter control sequences out of 15000+600000
- 24361 words of font info for 157 fonts, out of 8000000 for 9000
+ 51192 strings out of 493706
+ 1038113 string characters out of 6145769
+ 1417019 words of memory out of 5000000
+ 53604 multiletter control sequences out of 15000+600000
+ 28569 words of font info for 177 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,14n,82p,10436b,1491s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,14n,82p,10436b,1489s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (45 pages).
+Output written on thesis.pdf (59 pages).

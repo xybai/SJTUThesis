@@ -552,6 +552,32 @@
       \keyw{Harris1981A}
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Harris1981A'}
     \endentry
+    \entry{shannon2001mathematical}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8c224849327c936bcdbf0872f2393592}{Shannon}{S\bibinitperiod}{Claude\bibnamedelima Elwood}{C\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{8c224849327c936bcdbf0872f2393592}
+      \strng{fullhash}{8c224849327c936bcdbf0872f2393592}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM SIGMOBILE Mobile Computing and Communications Review}
+      \field{number}{1}
+      \field{title}{A mathematical theory of communication}
+      \field{usera}{J}
+      \field{usere}{Shannon, Claude Elwood}
+      \field{userf}{Shannon, Claude Elwood}
+      \field{volume}{5}
+      \field{year}{2001}
+      \field{pages}{3\bibrangedash 55}
+      \range{pages}{53}
+      \keyw{shannon2001mathematical}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'shannon2001mathematical'}
+    \endentry
     \entry{li2017first}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=52379ed0ce8536bcd91139c884d4b26a}{Li}{L\bibinitperiod}{Xijun}{X\bibinitperiod}{}{}{}{}}%
@@ -703,6 +729,52 @@
       \range{pages}{7}
       \keyw{Chen2007Optimal}
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Chen2007Optimal'}
+    \endentry
+    \entry{Bock1982Marginal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7b37fd00cbf5e402b8dfa6f02a342b31}{Bock}{B\bibinitperiod}{R.\bibnamedelimi D.}{R\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=f6d0c3422151789c51d9ed16ff63762a}{Aitkin}{A\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f4abd472005d1c84de8ff238cfaa866a}
+      \strng{fullhash}{f4abd472005d1c84de8ff238cfaa866a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychometrika}
+      \field{number}{3}
+      \field{title}{Marginal maximum likelihood estimation of item parameters}
+      \field{usera}{J}
+      \field{usere}{Bock, R. D. and Aitkin, M.}
+      \field{userf}{Bock, R. D. and Aitkin, M.}
+      \field{volume}{47}
+      \field{year}{1982}
+      \field{pages}{369\bibrangedash 369}
+      \range{pages}{1}
+      \keyw{Bock1982Marginal}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Bock1982Marginal'}
+    \endentry
+    \entry{Zhou2017An}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2a72f304d2bc33c9c92301f2dc3063b2}{Zhou}{Z\bibinitperiod}{Ming}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=4cafd954aa2aba5f875904138bde5fa8}{Tian}{T\bibinitperiod}{Shaonan}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=d45b9671bba290bfc1f4746a81fd20b0}{Park}{P\bibinitperiod}{Taeho}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9f87ed0822f64b75634c54eb269b166f}
+      \strng{fullhash}{9f87ed0822f64b75634c54eb269b166f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Mathematics in Operational Research}
+      \field{title}{An empirical test of Tobit model robustness in estimating online auction prices over various distributions}
+      \field{usera}{J}
+      \field{usere}{Zhou, Ming and Tian, Shaonan and Park, Taeho}
+      \field{userf}{Zhou, Ming and Tian, Shaonan and Park, Taeho}
+      \field{volume}{10}
+      \field{year}{2017}
+      \keyw{Zhou2017An}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Zhou2017An'}
     \endentry
   \endsortlist
 \endrefsection
