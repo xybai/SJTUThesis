@@ -7,20 +7,20 @@
 \contentsline {figure}{\numberline {3--1}{\ignorespaces 的士司机行车记录数据集}}{8}{figure.3.1}
 \contentsline {figure}{\numberline {3--2}{\ignorespaces 数据集连接操作示意图}}{13}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4--1}{\ignorespaces 竞拍参与人数分布直方图}}{17}{figure.4.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {持续时长为3天的拍卖}}}{17}{figure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {持续时长为5天的拍卖}}}{17}{figure.4.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {持续时长为7天的拍卖}}}{17}{figure.4.1}
-\contentsline {figure}{\numberline {4--2}{\ignorespaces 在不同参数设置下的卖家平均收益与保留价的变化趋势}}{24}{figure.4.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$T=3,v_l=10,v_h=100$}}}{24}{figure.4.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$T=5,v_l=10,v_h=100$}}}{24}{figure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$T=10,v_l=10,v_h=100$}}}{24}{figure.4.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$T=3,v_l=100,v_h=200$}}}{24}{figure.4.2}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$T=5,v_l=100,v_h=200$}}}{24}{figure.4.2}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$T=7,v_l=100,v_h=200$}}}{24}{figure.4.2}
-\contentsline {figure}{\numberline {4--3}{\ignorespaces 在不同参数设置下的期望成交价$E(v^{(2)})$}}{25}{figure.4.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$v_l=10,v_h=100$}}}{25}{figure.4.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$v_l=100,v_h=200$}}}{25}{figure.4.3}
+\contentsline {figure}{\numberline {4--1}{\ignorespaces 竞拍参与人数分布直方图}}{19}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {持续时长为3天的拍卖}}}{19}{figure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {持续时长为5天的拍卖}}}{19}{figure.4.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {持续时长为7天的拍卖}}}{19}{figure.4.1}
+\contentsline {figure}{\numberline {4--2}{\ignorespaces 在不同参数设置下的卖家平均收益与保留价的变化趋势}}{26}{figure.4.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$T=3,v_l=10,v_h=100$}}}{26}{figure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$T=5,v_l=10,v_h=100$}}}{26}{figure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$T=10,v_l=10,v_h=100$}}}{26}{figure.4.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$T=3,v_l=100,v_h=200$}}}{26}{figure.4.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$T=5,v_l=100,v_h=200$}}}{26}{figure.4.2}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$T=7,v_l=100,v_h=200$}}}{26}{figure.4.2}
+\contentsline {figure}{\numberline {4--3}{\ignorespaces 在不同参数设置下的期望成交价$E(v^{(2)})$}}{27}{figure.4.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$v_l=10,v_h=100$}}}{27}{figure.4.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$v_l=100,v_h=200$}}}{27}{figure.4.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

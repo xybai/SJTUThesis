@@ -578,6 +578,88 @@
       \keyw{shannon2001mathematical}
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'shannon2001mathematical'}
     \endentry
+    \entry{koutris2012querymarket}{article}{}
+      \name{author}{5}{}{%
+        {{hash=eed26062138406c0914e729cebd1d201}{Koutris}{K\bibinitperiod}{Paraschos}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=0e60aa7cdb15df1fdc1af82880aa387f}{Upadhyaya}{U\bibinitperiod}{Prasang}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=ea491ce017356bb561d7f05c80d7262b}{Balazinska}{B\bibinitperiod}{Magdalena}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8d65b946c2af0b92bf018fabd57296b7}{Howe}{H\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=dad05536948804793c3e454acd5ecb8f}{Suciu}{S\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {VLDB Endowment}%
+      }
+      \strng{namehash}{6c81380186f39bdb59c8307cd251d0f6}
+      \strng{fullhash}{b0762dad1edef1764f7d0fa4f3b283b2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the VLDB Endowment}
+      \field{number}{12}
+      \field{title}{QueryMarket demonstration: Pricing for online data markets}
+      \field{usera}{J}
+      \field{usere}{Koutris, Paraschos and Upadhyaya, Prasang and Balazinska, Magdalena and Howe, Bill and Suciu, Dan}
+      \field{userf}{Koutris, Paraschos and Upadhyaya, Prasang and Balazinska, Magdalena and Howe, Bill and Suciu, Dan}
+      \field{volume}{5}
+      \field{year}{2012}
+      \field{pages}{1962\bibrangedash 1965}
+      \range{pages}{4}
+      \keyw{koutris2012querymarket}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'koutris2012querymarket'}
+    \endentry
+    \entry{lin2014arbitrage}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7531141c081ffec84f4d5b4fd64c6d68}{Lin}{L\bibinitperiod}{Bing-Rong}{B\bibinithyphendelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=f5e5f18611814172bad93825bf8c4bf0}{Kifer}{K\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {VLDB Endowment}%
+      }
+      \strng{namehash}{143dd53b2ef00c3112a62220359bef33}
+      \strng{fullhash}{143dd53b2ef00c3112a62220359bef33}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the VLDB Endowment}
+      \field{number}{9}
+      \field{title}{On arbitrage-free pricing for general data queries}
+      \field{usera}{J}
+      \field{usere}{Lin, Bing-Rong and Kifer, Daniel}
+      \field{userf}{Lin, Bing-Rong and Kifer, Daniel}
+      \field{volume}{7}
+      \field{year}{2014}
+      \field{pages}{757\bibrangedash 768}
+      \range{pages}{12}
+      \keyw{lin2014arbitrage}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'lin2014arbitrage'}
+    \endentry
+    \entry{balazinska2011data}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ea491ce017356bb561d7f05c80d7262b}{Balazinska}{B\bibinitperiod}{Magdalena}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8d65b946c2af0b92bf018fabd57296b7}{Howe}{H\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=dad05536948804793c3e454acd5ecb8f}{Suciu}{S\bibinitperiod}{Dan}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{21944b4fc2d2dae7cb6953cc65135851}
+      \strng{fullhash}{21944b4fc2d2dae7cb6953cc65135851}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. of the VLDB Endowment}
+      \field{number}{12}
+      \field{title}{Data markets in the cloud: An opportunity for the database community}
+      \field{usera}{J}
+      \field{usere}{Balazinska, Magdalena and Howe, Bill and Suciu, Dan}
+      \field{userf}{Balazinska, Magdalena and Howe, Bill and Suciu, Dan}
+      \field{volume}{4}
+      \field{year}{2011}
+      \field{pages}{1482\bibrangedash 1485}
+      \range{pages}{4}
+      \keyw{balazinska2011data}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'balazinska2011data'}
+    \endentry
     \entry{li2017first}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=52379ed0ce8536bcd91139c884d4b26a}{Li}{L\bibinitperiod}{Xijun}{X\bibinitperiod}{}{}{}{}}%

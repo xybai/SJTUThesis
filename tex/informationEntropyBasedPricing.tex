@@ -327,9 +327,69 @@ $H_{joint}(\cdot)$，$H_{cond}(\cdot)$, $H_{cond}(\cdot)$以及$I(\cdot)$的非�
   \bicaption[fig:joint_data_set]{数据集连接操作示意图}{数据集连接操作示意图}{Fig}{An illustration of dataset join}
 \end{figure}
 
+\begin{propt}[定价函数的无套利性]
+对于数据集$\bm{D_1}$和$\bm{D_2}$，如果$\bm{D_1} \circledcirc \bm{D_2}$的价格小于或等于$\bm{D_1}$和$\bm{D_2}$的简单求和，那么定价函数就是无套利的，即：
+\begin{equation}
+  \begin{aligned}
+  pr(\bm{D_1} \circledcirc \bm{D_2}) \le pr(\bm{D_1})+pr(\bm{D_2}).
+  \end{aligned}
+\end{equation}
+\label{pr:arbitrage-free}
+\end{propt}
+
+在经济学和金融学中，套利指的是通过不同市场之间的价格差异获得利润差的行为。具体说来就是套利者可以通过在某个市场低价购入物品，然后在另一个市场高价卖出该物品。然而，这个概念在金融市场和数据市场是有些许差异的。现在假设有三个数据集$\bm{D_1}$，$\bm{D_2}$和$\bm{D_3}$，相应的价格分别为$p_1$, $p_2$, and $p_3$，如果数据集$\bm{D_3}$可以通过连接$\bm{D_1}$和$\bm{D_2}$得到，即$\bm{D_3}=\bm{D_1} \circledcirc \bm{D_2}$。当$p_3\ge p_1+p_2$，套利的条件就产生了。一个精明的数据消$p_3$费者可以通过分别购买数据集$\bm{D_1}$和$\bm{D_2}$以一个相对原价$p_3$更低的价格$p_1+p_2$获得数据集$\bm{D_3}$。因此，一个好的定价函数应当是能避免套利行为的。
+
+\begin{lem}
+对于定价函数$pr(\cdot) \equiv l(H(\cdot))$，这里$l(\cdot)$是一个非递减的联系函数。如果$l(\cdot)$满足公式(\ref{eq:link_function_property1})和公式(\ref{eq:link_function_property2})，那么$pr(\cdot)$是无套利的。
+\label{lemma:arbitrage-free}
+
+\begin{proof}
+
+给定两个数据集$\bm{D_1}$和$\bm{D_2}$，以及一个定价函数$pr(\cdot)$，$pr(\cdot) \equiv l(H(\cdot))$, 其中$l(\cdot)$是非递减的联系函数。
+
+根据性质~\ref{pr:entropry_relationships}, $H(\bm{D_1})$, $H(\bm{D_2})$和$H(\bm{D_1},\bm{D_2})$的关系如下：
+
+\begin{equation}
+  H(\bm{D_1},\bm{D_2})\le H(\bm{D_1})+H(\bm{D_2}),
+\end{equation}
+\begin{equation}
+  H(\bm{D_1},\bm{D_2})\ge H(\bm{D_1}),
+\end{equation}
+\begin{equation}
+  H(\bm{D_1},\bm{D_2})\ge H(\bm{D_2}).
+\end{equation}
+
+
+因为$pr(\cdot) \equiv l(H(\cdot))$和$l(\cdot)$满足公式~(\ref{eq:link_function_property1})和公式(\ref{eq:link_function_property2})，所以我们有：
+
+\begin{equation}
+  pr(\bm{D_1}\circledcirc \bm{D_2})\le pr(\bm{D_1})+pr(\bm{D_2}),
+\end{equation}
+\begin{equation}
+  pr(\bm{D_1}\circledcirc \bm{D_2})\ge pr(\bm{D_1}),
+\end{equation}
+\begin{equation}
+  pr(\bm{D_1}\circledcirc \bm{D_2})\ge pr(\bm{D_2}).
+\end{equation}
+
+因此，定价函数$pr(\cdot)$是无套利的。
+
+\end{proof}
+
+\end{lem}
+
+无套利的性质是基于数据信息熵的定价函数最好的一个性质，这也是之前很多研究\cite{koutris2012querymarket,koutris2015query,lin2014arbitrage}所追求的目标。
+
 \subsection{讨论}
 
+理论上，我们提出的信息量测量方法能被应用到任何类型的数据。但是，实际中只有全离散型或者全连续型能被精确地度量。因为在这种情形下，是相对容易去找到其概率密度函数的。测量混合型数据的信息量是我们未来的工作之一。
+
+关于本小节中提出的基于数据信息熵定价函数，其最大的优点就是其无套利性质。之前的一些基于查询的数据定价的研究\cite{balazinska2011data,koutris2012querymarket,koutris2015query}都是致力于使他们提出的定价函数变成无套利的。论文\cite{balazinska2011data}提出了基于查询的数据定价的原型，在该文中一个关于在线数据市场如何计算查询价格的简单例子被提出来了。尽管后续的研究者基于论文\cite{balazinska2011data}提出了不同的定价函数，但是他们仍然没有解决如何为查询的最小单元（视图）定价的问题，这些最小单元的定价仍然是主观定价的。我们提出的数据定价指标——数据信息熵，也许能提供一个新的视角去解决论文\cite{balazinska2011data,koutris2012querymarket,koutris2015query}所遗留的问题。因为数据信息熵能够为数据定价者提供不同视图之间的明确的定价关系，以避免套利行为的发生。
+
+
 \section{实验与评估}
+
+为了推动数据市场的经营者采用本文提出的数据信息熵来指导他们的商品定价，我们首先需要验证提出的数据定价指标的合理性和有效性。我们从两个方面评估数据信息熵：1）数据集数据信息熵和该数据集大小的关系。根据大量数据交易记录，一个数据集的信息量大小一般是与该数据集的大小成正比。如果数据信息熵能度量一个数据集的信息量，那么它首先应是数据集大小的非递减函数；2）数据集的数据信息熵和和在该数据集上分类器正确率的的关系。根据大量机器学习实验的经验，经过一个数据集训练的分类器的分类正确率是与该数据集的有效信息量是有关的。更加细一点地说，如果有更多的有效信息被分类器学到了，那么该分类器之后的分类正确率就会更高。
 
 \subsection{实践中遇到的问题}
 
