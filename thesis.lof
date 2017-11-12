@@ -6,21 +6,34 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3--1}{\ignorespaces 的士司机行车记录数据集}}{8}{figure.3.1}
 \contentsline {figure}{\numberline {3--2}{\ignorespaces 数据集连接操作示意图}}{13}{figure.3.2}
+\contentsline {figure}{\numberline {3--3}{\ignorespaces 支持向量机示意图}}{16}{figure.3.3}
+\contentsline {figure}{\numberline {3--4}{\ignorespaces 决策树示意图}}{16}{figure.3.4}
+\contentsline {figure}{\numberline {3--5}{\ignorespaces 线性判别分析示意图}}{17}{figure.3.5}
+\contentsline {figure}{\numberline {3--6}{\ignorespaces 数据集的两种切分方式}}{19}{figure.3.6}
+\contentsline {figure}{\numberline {3--7}{\ignorespaces 基于属性划分的元组集合实验结果1}}{20}{figure.3.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ecoli}}}{20}{figure.3.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ionosphere}}}{20}{figure.3.7}
+\contentsline {figure}{\numberline {3--8}{\ignorespaces 基于属性划分的元组集合实验结果2}}{21}{figure.3.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {vehicle}}}{21}{figure.3.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {letter}}}{21}{figure.3.8}
+\contentsline {figure}{\numberline {3--9}{\ignorespaces 基于属性划分的元组集合实验结果3}}{22}{figure.3.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {mushroom}}}{22}{figure.3.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {nursery}}}{22}{figure.3.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4--1}{\ignorespaces 竞拍参与人数分布直方图}}{19}{figure.4.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {持续时长为3天的拍卖}}}{19}{figure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {持续时长为5天的拍卖}}}{19}{figure.4.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {持续时长为7天的拍卖}}}{19}{figure.4.1}
-\contentsline {figure}{\numberline {4--2}{\ignorespaces 在不同参数设置下的卖家平均收益与保留价的变化趋势}}{26}{figure.4.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$T=3,v_l=10,v_h=100$}}}{26}{figure.4.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$T=5,v_l=10,v_h=100$}}}{26}{figure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$T=10,v_l=10,v_h=100$}}}{26}{figure.4.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$T=3,v_l=100,v_h=200$}}}{26}{figure.4.2}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$T=5,v_l=100,v_h=200$}}}{26}{figure.4.2}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$T=7,v_l=100,v_h=200$}}}{26}{figure.4.2}
-\contentsline {figure}{\numberline {4--3}{\ignorespaces 在不同参数设置下的期望成交价$E(v^{(2)})$}}{27}{figure.4.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$v_l=10,v_h=100$}}}{27}{figure.4.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$v_l=100,v_h=200$}}}{27}{figure.4.3}
+\contentsline {figure}{\numberline {4--1}{\ignorespaces 竞拍参与人数分布直方图}}{25}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {持续时长为3天的拍卖}}}{25}{figure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {持续时长为5天的拍卖}}}{25}{figure.4.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {持续时长为7天的拍卖}}}{25}{figure.4.1}
+\contentsline {figure}{\numberline {4--2}{\ignorespaces 在不同参数设置下的卖家平均收益与保留价的变化趋势}}{32}{figure.4.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$T=3,v_l=10,v_h=100$}}}{32}{figure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$T=5,v_l=10,v_h=100$}}}{32}{figure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$T=10,v_l=10,v_h=100$}}}{32}{figure.4.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$T=3,v_l=100,v_h=200$}}}{32}{figure.4.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$T=5,v_l=100,v_h=200$}}}{32}{figure.4.2}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$T=7,v_l=100,v_h=200$}}}{32}{figure.4.2}
+\contentsline {figure}{\numberline {4--3}{\ignorespaces 在不同参数设置下的期望成交价$E(v^{(2)})$}}{33}{figure.4.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$v_l=10,v_h=100$}}}{33}{figure.4.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$v_l=100,v_h=200$}}}{33}{figure.4.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

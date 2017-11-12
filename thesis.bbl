@@ -660,6 +660,200 @@
       \keyw{balazinska2011data}
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'balazinska2011data'}
     \endentry
+    \entry{parzen1962estimation}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3538e72c10a2ef29e8444e94614376a0}{Parzen}{P\bibinitperiod}{Emanuel}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{3538e72c10a2ef29e8444e94614376a0}
+      \strng{fullhash}{3538e72c10a2ef29e8444e94614376a0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The annals of mathematical statistics}
+      \field{number}{3}
+      \field{title}{On estimation of a probability density function and mode}
+      \field{usera}{J}
+      \field{usere}{Parzen, Emanuel}
+      \field{userf}{Parzen, Emanuel}
+      \field{volume}{33}
+      \field{year}{1962}
+      \field{pages}{1065\bibrangedash 1076}
+      \range{pages}{12}
+      \keyw{parzen1962estimation}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'parzen1962estimation'}
+    \endentry
+    \entry{burges1998tutorial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0c1232164e3919bf78dc1ceb5c977473}{Burges}{B\bibinitperiod}{Christopher\bibnamedelima JC}{C\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0c1232164e3919bf78dc1ceb5c977473}
+      \strng{fullhash}{0c1232164e3919bf78dc1ceb5c977473}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data mining and knowledge discovery}
+      \field{number}{2}
+      \field{title}{A tutorial on support vector machines for pattern recognition}
+      \field{usera}{J}
+      \field{usere}{Burges, Christopher JC}
+      \field{userf}{Burges, Christopher JC}
+      \field{volume}{2}
+      \field{year}{1998}
+      \field{pages}{121\bibrangedash 167}
+      \range{pages}{47}
+      \keyw{burges1998tutorial}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'burges1998tutorial'}
+    \endentry
+    \entry{vapnik2013nature}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c2b3e05872463585b4be6aab10d10d63}{Vapnik}{V\bibinitperiod}{Vladimir}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{c2b3e05872463585b4be6aab10d10d63}
+      \strng{fullhash}{c2b3e05872463585b4be6aab10d10d63}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The nature of statistical learning theory}
+      \field{usera}{M}
+      \field{usere}{Vapnik, Vladimir}
+      \field{userf}{Vapnik, Vladimir}
+      \field{year}{2013}
+      \keyw{vapnik2013nature}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'vapnik2013nature'}
+    \endentry
+    \entry{milenova2005svm}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=ca0b1810cd9462db3a56f6825cc26a19}{Milenova}{M\bibinitperiod}{Boriana\bibnamedelima L}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=9fe7da48fdbb69f858472220dd8d51a0}{Yarmus}{Y\bibinitperiod}{Joseph\bibnamedelima S}{J\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=012b64e336a496bbf4372b4d47b86c74}{Campos}{C\bibinitperiod}{Marcos\bibnamedelima M}{M\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {VLDB Endowment}%
+      }
+      \strng{namehash}{24927ce771ba572e6a7ac9e690440ecd}
+      \strng{fullhash}{24927ce771ba572e6a7ac9e690440ecd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 31st international conference on Very large data bases}
+      \field{title}{SVM in oracle database 10g: removing the barriers to widespread adoption of support vector machines}
+      \field{usera}{C}
+      \field{usere}{Milenova, Boriana L and Yarmus, Joseph S and Campos, Marcos M}
+      \field{userf}{Milenova, Boriana L and Yarmus, Joseph S and Campos, Marcos M}
+      \field{year}{2005}
+      \field{pages}{1152\bibrangedash 1163}
+      \range{pages}{12}
+      \keyw{milenova2005svm}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'milenova2005svm'}
+    \endentry
+    \entry{safavian1990survey}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5014fd0c8d5b8a64cd740aa3e6314a5c}{Safavian}{S\bibinitperiod}{S\bibnamedelima Rasoul}{S\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=3939c34d22d6b528d96b5af258fff319}{Landgrebe}{L\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ad26fc41c1696cabb84e5b8c94f18b24}
+      \strng{fullhash}{ad26fc41c1696cabb84e5b8c94f18b24}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A survey of decision tree classifier methodology}
+      \field{usera}{J}
+      \field{usere}{Safavian, S Rasoul and Landgrebe, David}
+      \field{userf}{Safavian, S Rasoul and Landgrebe, David}
+      \field{year}{1990}
+      \keyw{safavian1990survey}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'safavian1990survey'}
+    \endentry
+    \entry{hu2015differential}{article}{}
+      \name{author}{8}{}{%
+        {{hash=bb95606438275f5664066ca5391435a9}{Hu}{H\bibinitperiod}{Xueyang}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=60896c34bf4ff44aab77e848efa554e1}{Yuan}{Y\bibinitperiod}{Mingxuan}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=f965c6a5f7a77d088f23a9c40133d85f}{Yao}{Y\bibinitperiod}{Jianguo}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=6d8b6548edf7f293d0d08a8a4662cd40}{Deng}{D\bibinitperiod}{Yu}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=046842e5933d7131df18c28d8bce94ff}{Chen}{C\bibinitperiod}{Lei}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=55242d2a60270145342841e4d4238da0}{Yang}{Y\bibinitperiod}{Qiang}{Q\bibinitperiod}{}{}{}{}}%
+        {{hash=193fe22ab9a3b44f8ae467e9c216bcec}{Guan}{G\bibinitperiod}{Haibing}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=3736d0a032b1824bac8e070814963a5e}{Zeng}{Z\bibinitperiod}{Jia}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {VLDB Endowment}%
+      }
+      \strng{namehash}{aca1896a96af95615184d2ca555f6e67}
+      \strng{fullhash}{7b01ac9550f036cb18f1e63bc01cceff}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the VLDB Endowment}
+      \field{number}{12}
+      \field{title}{Differential privacy in telco big data platform}
+      \field{usera}{J}
+      \field{usere}{Hu, Xueyang and Yuan, Mingxuan and Yao, Jianguo and Deng, Yu and Chen, Lei and Yang, Qiang and Guan, Haibing and Zeng, Jia}
+      \field{userf}{Hu, Xueyang and Yuan, Mingxuan and Yao, Jianguo and Deng, Yu and Chen, Lei and Yang, Qiang and Guan, Haibing and Zeng, Jia}
+      \field{volume}{8}
+      \field{year}{2015}
+      \field{pages}{1692\bibrangedash 1703}
+      \range{pages}{12}
+      \keyw{hu2015differential}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'hu2015differential'}
+    \endentry
+    \entry{webb2003statistical}{book}{}
+      \name{author}{1}{}{%
+        {{hash=134b217ba6054428a3a89824d1a3b963}{Webb}{W\bibinitperiod}{Andrew\bibnamedelima R}{A\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{134b217ba6054428a3a89824d1a3b963}
+      \strng{fullhash}{134b217ba6054428a3a89824d1a3b963}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical pattern recognition}
+      \field{usera}{M}
+      \field{usere}{Webb, Andrew R}
+      \field{userf}{Webb, Andrew R}
+      \field{year}{2003}
+      \keyw{webb2003statistical}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'webb2003statistical'}
+    \endentry
+    \entry{Lichman:2013}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7202d1c034f2a555a0a037bc17d642aa}{Lichman}{L\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{2}{%
+        {University of California, Irvine, School of Information}%
+        {Computer Sciences}%
+      }
+      \strng{namehash}{7202d1c034f2a555a0a037bc17d642aa}
+      \strng{fullhash}{7202d1c034f2a555a0a037bc17d642aa}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://archive.ics.uci.edu/ml}}
+      \field{title}{{UCI} Machine Learning Repository}
+      \field{usere}{M. Lichman}
+      \field{userf}{M. Lichman}
+      \field{year}{2013}
+      \keyw{Lichman:2013}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Lichman:2013'}
+    \endentry
     \entry{li2017first}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=52379ed0ce8536bcd91139c884d4b26a}{Li}{L\bibinitperiod}{Xijun}{X\bibinitperiod}{}{}{}{}}%

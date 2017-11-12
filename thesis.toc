@@ -20,25 +20,31 @@
 \contentsline {subsection}{\numberline {3.2.4}讨论}{14}{subsection.3.2.4}
 \contentsline {section}{\numberline {3.3}实验与评估}{14}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}实践中遇到的问题}{15}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}在公开研究数据集上的实验}{15}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}在大规模工业数据集上的实验}{15}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}定价函数}{15}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}本章小结}{15}{section.3.4}
-\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}基于信息熵的数据商品在线拍卖的研究}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}研究动机}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}影响在线拍卖的重要因素}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}拍卖机制}{17}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}竞拍时长与参与人数}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}起拍价与保留价}{20}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}基于信息熵的在线拍卖模型}{20}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}带保留价的单件物品在线拍卖}{22}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}带保留价的多件物品在线拍卖}{24}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}模型评估}{24}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}卖家期望收益与保留价的关系}{24}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}成交价$E(v^{(2)})$的数值结果}{25}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}本章小结}{25}{section.4.5}
-\contentsline {chapter}{全文总结}{29}{chapter*.8}
-\contentsline {chapter}{参考文献}{31}{appendix*.9}
-\contentsline {chapter}{致\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}谢}{35}{appendix*.10}
-\contentsline {chapter}{攻读学位期间发表的学术论文}{37}{appendix*.11}
-\contentsline {chapter}{攻读学位期间参与的项目}{39}{appendix*.12}
+\contentsline {subsubsection}{\numberline {3.3.1.1}基于Parzen窗口函数的概率密度估计}{15}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}多个分类器}{15}{subsubsection.3.3.1.2}
+\contentsline {subsection}{\numberline {3.3.2}在公开研究数据集上的实验}{17}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}UCI数据集}{17}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}两种数据集切割方式}{18}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}基于属性划分的元组集合的实验}{18}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}基于记录划分的元组集合的实验}{19}{subsubsection.3.3.2.4}
+\contentsline {subsection}{\numberline {3.3.3}在大规模工业数据集上的实验}{19}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}定价函数}{19}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}本章小结}{19}{section.3.4}
+\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}基于信息熵的数据商品在线拍卖的研究}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}研究动机}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}影响在线拍卖的重要因素}{23}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}拍卖机制}{23}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}竞拍时长与参与人数}{24}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}起拍价与保留价}{26}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}基于信息熵的在线拍卖模型}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}带保留价的单件物品在线拍卖}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}带保留价的多件物品在线拍卖}{30}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}模型评估}{30}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}卖家期望收益与保留价的关系}{30}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}成交价$E(v^{(2)})$的数值结果}{31}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}本章小结}{31}{section.4.5}
+\contentsline {chapter}{全文总结}{35}{chapter*.8}
+\contentsline {chapter}{参考文献}{37}{appendix*.9}
+\contentsline {chapter}{致\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}谢}{41}{appendix*.10}
+\contentsline {chapter}{攻读学位期间发表的学术论文}{43}{appendix*.11}
+\contentsline {chapter}{攻读学位期间参与的项目}{45}{appendix*.12}

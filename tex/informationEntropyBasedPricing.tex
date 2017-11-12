@@ -388,12 +388,202 @@ $H_{joint}(\cdot)$，$H_{cond}(\cdot)$, $H_{cond}(\cdot)$以及$I(\cdot)$的非�
 
 
 \section{实验与评估}
+\label{sec:evaluation}
+为了推动数据市场的经营者采用本文提出的数据信息熵来指导他们的商品定价，我们首先需要验证提出的数据定价指标的合理性和有效性。我们从两个方面评估数据信息熵：1）数据集数据信息熵和该数据集大小的关系。根据大量数据交易记录，一个数据集的信息量大小一般是与该数据集的大小成正比。如果数据信息熵能度量一个数据集的信息量，那么它首先应是数据集大小的非递减函数；2）数据集的数据信息熵和和在该数据集上分类器正确率的的关系。根据大量机器学习实验的经验，经过一个数据集训练的分类器的分类正确率是与该数据集的有效信息量是有关的。具体一点地说，如果有更多的有效信息被分类器学到了，那么该分类器之后的分类正确率就会更高。那么这意味着，如果数据信息熵能度量出数据集的有效信息量，其应当与该数据集上的分类器的分类正确率成正比。
 
-为了推动数据市场的经营者采用本文提出的数据信息熵来指导他们的商品定价，我们首先需要验证提出的数据定价指标的合理性和有效性。我们从两个方面评估数据信息熵：1）数据集数据信息熵和该数据集大小的关系。根据大量数据交易记录，一个数据集的信息量大小一般是与该数据集的大小成正比。如果数据信息熵能度量一个数据集的信息量，那么它首先应是数据集大小的非递减函数；2）数据集的数据信息熵和和在该数据集上分类器正确率的的关系。根据大量机器学习实验的经验，经过一个数据集训练的分类器的分类正确率是与该数据集的有效信息量是有关的。更加细一点地说，如果有更多的有效信息被分类器学到了，那么该分类器之后的分类正确率就会更高。
+为了研究上述两个关系，我们按照以下流程设计了实验步骤：1）对于一个给定的数据集，我们先将其按照记录数或者不同的属性数将其切分成若干个元组集合；2）测量这些元组集合的数据信息熵；3）在这些元组集合上训练不同的分类器，并记录相应的分类正确率。上述这些实验是在六个公开的研究数据集和一个大规模电信工业数据集上做的。
 
 \subsection{实践中遇到的问题}
 
+\subsubsection{基于Parzen窗口函数的概率密度估计}
+\label{subsubsec:parzen_window}
+
+前面提到过对于离散型数据的数据信息熵计算是很容易的，但是对于连续型数据集就比较难了，因为连续型数据的概率密度函数是不好估计的。这里，我们采用了基于Parzen窗口函数的概率密度估计来计算连续型数据的数据信息熵。下面，就简单地介绍下基于Parzen窗口函数的概率密度估计方法。
+
+在实际中，数据集的样本数总是有限的。这造成的结果就是我们通常很难用这些有限的样本数计算连续空间中的积分。比较常用的解决方案就是将连续数据空间划分为若干个离散的空间，然后在这些离散空间中求和积分。但是这种离散化求积分的方法是不足够精确的。另一个解决方案就是利用基于Parzen窗口函数\cite{parzen1962estimation}的概率密度估计方法来估计概率密度函数，从而去计算数据信息熵。
+
+对于连续型随机变量$x$的$n$个采样样本$x_1, x_2, ..., x_n$，如果其真正的概率密度函数是$p(\mathit{x})$，那么它的估计的概率密度函数$\hat{p}(\mathit{x})$被定义为：
+
+\begin{equation}
+  \begin{aligned}
+    \hat{p}(x)=\frac{1}{n}\sum_{i=1}^{n}\phi(x-x_i,h),
+  \end{aligned}
+\end{equation}
+其中$\phi(\cdot)$是Parzen窗口函数，$h$是窗口宽度。Parzen\cite{parzen1962estimation}已经证明了如果选择了合适的窗口函数$\phi(\cdot)$和窗口宽度$h$，且样本数$n$趋向于无穷时，那么估计的概率密度函数$\hat{p}(\mathit{x})$是可以收敛到真正的概率密度函数$p(\mathit{x})$的。
+
+但窗口函数的选择还是有限制的，其中就要求其必须是有限且非负：
+
+\begin{equation}
+  \begin{aligned}
+    \int \phi(y,h)dy = 1,
+  \end{aligned}
+\end{equation}
+其中窗口宽度$h$必须是样本数$n$的函数，且满足：
+
+\begin{equation}
+  \begin{aligned}
+    \lim_{n\rightarrow \infty} h(n)=0.
+  \end{aligned}
+\end{equation}
+
+高斯和矩形函数是最常用的窗口函数。在本文中，我们采用高斯函数作为窗口函数：
+
+\begin{equation}
+  \begin{aligned}
+    \phi(z,h)=\frac{1}{(2\pi)^{d/2}h^d\|\sigma\|^{1/2}}\exp(-\frac{z^T\sigma^{-1}z}{2h^2}),
+  \end{aligned}
+\end{equation}
+其中$\sigma$表示$d$维随机向量$z$的协方差矩阵。
+
+我们利用基于Parzen窗口函数的概率密度估计方法来计算连续型数据的数据信息熵。
+
+\subsubsection{多个分类器}
+
+为了验证我们提出的信息量测量指标和方法的通用性，我们在不同数据集上训练了不同分类器。这些分类器都是目前机器学习领域最常用也是被研究地最透彻的分类器，比如支持向量机(Support Vector Machine, SVM)，决策树(Decision Tree, DT)以及线性判别分析(Linear Discriminative Analysis, LDA)。
+
+支持向量机\cite{burges1998tutorial,vapnik2013nature,milenova2005svm}在高维或无限维空间中构造超平面或超平面集合，如图\ref{fig:svm}，其可以用于分类、回归或其他任务。直观来说，分类边界距离最近的训练样本点越远越好，因为这样可以减小支持向量的泛化误差。
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.6\textwidth]{chapter3/svm}
+  %\noindent\rule[0.25\baselineskip]{0.4855\textwidth}{0.95pt}
+  \bicaption[fig:svm]{支持向量机示意图}{支持向量机示意图}{Fig}{An illustration of support vector machine}
+\end{figure}
+
+决策树\cite{safavian1990survey,hu2015differential} 是一个预测模型；它代表的是对象属性与对象值之间的一种函数关系。树中每个节点表示某个对象，而每条边则代表某个可能的属性值，而每个叶节点则对应从根节点到该叶节点所经历的路径所表示的对象的值，如图\ref{fig:dt}。决策树仅有单一输出。数据挖掘中决策树是一种经常要用到的技术，可以用于分析数据，同样也可以用来作预测。
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.6\textwidth]{chapter3/dt}
+  %\noindent\rule[0.25\baselineskip]{0.4855\textwidth}{0.95pt}
+  \bicaption[fig:dt]{决策树示意图}{决策树示意图}{Fig}{An illustration of decision tree}
+\end{figure}
+
+线性判别分析\cite{webb2003statistical}是最早被提出的分类器之一，它能在输入空间中学到线性分类边界，如图\ref{fig:lda}。线性判别分析能用来做二分类或者多分类的问题。
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.6\textwidth]{chapter3/lda}
+  %\noindent\rule[0.25\baselineskip]{0.4855\textwidth}{0.95pt}
+  \bicaption[fig:lda]{线性判别分析示意图}{线性判别分析示意图}{Fig}{An illustration of linear discriminative analysis}
+\end{figure}
+
 \subsection{在公开研究数据集上的实验}
+
+\subsubsection{UCI数据集}
+
+我们所做的实验都是基于UCI机器学习公开数据集\cite{Lichman:2013}，这些数据集都是有类标签的。我们把这些数据集的详细信息总结在表\ref{tab:datasets_used}。
+
+\begin{table*}[!t]
+\centering
+\bicaption[tab:datasets_used]{实验中用到的UCI数据集}{实验中用到的UCI数据集}{Table}{UCI Datasets Used in The Experiments}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+数据集名称 &Letter &Mushroom &Nursery &Ecoli &Ionosphere &Vehicle \\
+\hline
+\hline
+缩写 &LET &MUS &NUR &ECO &ION &VEH\\
+\hline
+原始数据类型 &
+\multicolumn{3}{c|}{离散型}&
+\multicolumn{3}{c|}{连续型}\\
+\hline
+预处理方法 &
+\multicolumn{3}{c|}{---}&
+\multicolumn{3}{c|}{z-score ($\mu=0,\sigma=1$)}\\
+\hline
+记录数 &$20000$ &$8124$ &$12960$ &$336$ &$351$ &$946$ \\
+\hline
+属性数 &$16$ &$22$ &$8$ &$7$ &$34$ &$18$\\
+\hline
+种类数 &$26$ &$2$ &$4$ &$8$ &$2$ &$4$\\
+\hline
+测试方法&
+\multicolumn{3}{c|}{10折交叉验证法}&
+\multicolumn{2}{c|}{留一法}&
+10折交叉验证法\\
+\hline
+来源&
+\multicolumn{6}{c|}{UCI机器学习数据库~\cite{Lichman:2013}}\\
+\hline
+\end{tabular}
+\end{table*}
+
+具体来说，前三个数据集LET，MUS和NUR是离散型数据集。后三个数据集ECO，ION和VEH是连续型数据集。连续型数据中的属性值经过了预处理使得其服从均值为零，单位方差的正态分布。
+
+数据集LET包含了$20000$个大写字母的初始数值属性，其总共分为$26$类，也就是$26$个英文字母。属性值是在$0$到$15$变化的整数。我们在该数据集上利用10折交叉验证法测试训练的分类器。
+
+数据集MUS包含$23$种蘑菇的$22$条属性的$8124$条记录，这些记录总共分为两类，即有毒的蘑菇和无毒的蘑菇。我们在这个数据集上仍采用10折交叉验证法。
+
+数据集NUR总共有$8$个属性的$12960$条离散数据记录，共分成$4$类。我们在这个数据集上仍采用10折交叉验证法。
+
+数据集ECO包含$7$条属性的$336$条记录，共分成$8$类。因为该数据集包含的记录很少，我们在该数据集上使用是的留一交叉验证法。
+
+数据集ION包含$34$个属性的$351$记录，共分成两类。在这个数据集上，我们仍然采用留一检查验证法。
+
+最后一个数据集ION包含$18$个属性的$946$条记录，共分成$4$个状态。在该数据集上，我们仍然采用10折交叉验证法。
+
+上述列出的这些数据集在记录数、属性数以及数据类型上都有所不同。我们之所以在这么多不同的数据集上训练了不同的分类器，是希望能做一个完成的测试，以此来验证我们提出ed数据定价指标的合理性。
+
+\subsubsection{两种数据集切割方式}
+\label{subsubsec:two_splitting_ways}
+
+正如前面\ref{sec:data pricing strategy}小节讨论的，数据市场上的买家往往只会购买完整数据集的部分子集。具体来说就是，他们更倾向于购买完整数据集的部分记录或者部分属性。为了更好地拟合买家的市场行为，对于一个给定的数据集，我们按照如下两种划分方式进行实验：1）按照数据集的属性划分；2）按照数据集的记录划分。这两种划分方式可以参照图\ref{fig:split_dataset}。在将给定数据集划分成不同的元组集合后，我们就分别测量这些元组集合的数据信息熵，再测量三个分类器在它们上面的分类正确率。
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.7\textwidth]{chapter3/split_dataset}
+  %\noindent\rule[0.25\baselineskip]{0.4855\textwidth}{0.95pt}
+  \bicaption[fig:split_dataset]{数据集的两种切分方式}{数据集的两种切分方式}{Fig}{Two ways for splitting a datase into tuple sets}
+\end{figure}
+
+\subsubsection{基于属性划分的元组集合的实验}
+在该实验中，对于一个给定的数据集，我们根据其属性将其划分成含不同属性数的元组集合。然后我们测量这些元组集合的数据信息熵。紧接着，我们基于这些元组集合训练三个分类器，然后记录这三个分类器在这些元组集合上的分类正确率。
+
+例如，数据集ECO总共有七个属性。我们首先将其切分成七个不同的元组集合，这些元组集合分别包含原始数据集ECO的1,2,3,4,5,6,7个属性。然后，我们利用本文提出的数据信息熵来度量这些元组集合的信息量。紧接着，再基于这七个元组集合分别训练支持向量机、决策树和线性判别分析三种分类器，记录下这三个分类器在相应元组集合的分类正确率。剩下的数据集也采用上述同样的步骤进行实验。该实验相关的所有结果被绘制在图\ref{fig:exp2_1}，\ref{fig:exp2_2}和\ref{fig:exp2_3}中。
+
+\begin{figure}[h]
+	\centering
+	\subfigure[ecoli]{
+		\label{fig:ecoli_exp2}
+		\includegraphics[width=0.6\textwidth]{chapter3/ecoli_experiment_2_with_3_classifiers}
+	}
+	\subfigure[ionosphere]{
+		\label{fig:ionosphere_exp2}
+		\includegraphics[width=0.6\textwidth]{chapter3/ionosphere_experiment_2_with_3_classifiers}
+	}
+\bicaption[fig:exp2_1]{基于属性划分的元组集合实验结果1}{基于属性划分的元组集合实验结果1}{Fig}{Testing results on attribute-based tuple sets}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+	\subfigure[vehicle]{
+		\label{fig:evehicle_exp2}
+		\includegraphics[width=0.6\textwidth]{chapter3/vehicle_experiment_2_with_3_classifiers}
+	}
+	\subfigure[letter]{
+		\label{fig:letter_exp2}
+		\includegraphics[width=0.6\textwidth]{chapter3/letter_experiment_2_with_3_classifiers}
+	}
+\bicaption[fig:exp2_2]{基于属性划分的元组集合实验结果2}{基于属性划分的元组集合实验结果2}{Fig}{Testing results on attribute-based tuple sets}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+	\subfigure[mushroom]{
+		\label{fig:mushroom_exp2}
+		\includegraphics[width=0.6\textwidth]{chapter3/mushroom_experiment_2_with_3_classifiers}
+	}
+	\subfigure[nursery]{
+		\label{fig:nursery_exp2}
+		\includegraphics[width=0.6\textwidth]{chapter3/nursery_experiment_2_with_3_classifiers}
+	}
+\bicaption[fig:exp2_3]{基于属性划分的元组集合实验结果3}{基于属性划分的元组集合实验结果3}{Fig}{Testing results on attribute-based tuple sets}
+\end{figure}
+
+连续型数据集ECO，ION和VEH的实验结果被呈现在图\ref{fig:ecoli_exp2}，\ref{fig:ionosphere_exp2}和\ref{fig:vehicle_exp2}中。根据这些实验结果，我们可以发现数据信息熵是随着属性数的增大而单调上升的。而图\ref{fig:ecoli_exp2}和\ref{fig:vehicle_exp2}可以看出分类器的分类正确率曲线呈现上升趋势，而图\ref{fig:ionosphere_exp2}呈现相同的趋势但是伴随着更多的扰动。尽管不同的分类器的表现有些许不同，但是这三个分类器的分类正确率都是随着数据信息熵的增加而上升。而离散数据集LET，MUS和NUR的实验，其结果被记录在图\ref{fig:letter_exp2}，\ref{fig:mushroom_exp2}和\ref{fig:nursery_exp2}中。正如在图\ref{fig:letter_exp2}，\ref{fig:mushroom_exp2}和\ref{fig:nursery_exp2}看到的那样，在离散数据集上的实验结果是与连续型数据集的结果很相似的，甚至更好一些。需要指出的是，在图\ref{fig:mushroom_exp2}中，其实是有三条分类正确率曲线的，但是决策树的分类正确率曲线被支持向量机的分类正确率曲线遮挡住了。相比于连续型数据集的结果，离散数据集上训练的分类器的分类正确率曲线也是随着数据信息熵的增大更上升但是更加稳定。
+
+\subsubsection{基于记录划分的元组集合的实验}
 
 \subsection{在大规模工业数据集上的实验}
 
